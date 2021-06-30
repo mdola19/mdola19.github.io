@@ -1,0 +1,3468 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@font-face {
+  font-family: "lovelo";
+  src: url("../Fonts/Lovelo Black.otf");
+}
+
+@font-face {
+  font-family: 'now';
+  src: url("../Fonts/Now-Regular.woff");
+}
+
+:root {
+  --primary-color: #2aaebb;
+  --secondary-color: #ffe500;
+  --bg-color: #545454;
+}
+
+.index-body {
+  margin: 0;
+  background: url("../images/bg.jpg");
+  overflow-x: hidden;
+}
+
+.navbar {
+  font-weight: 400;
+  font-size: .9em;
+  font-family: 'now';
+}
+
+.navbar .container {
+  padding: 1.3em;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  height: .5vh;
+}
+
+.container .project-logo {
+  z-index: 980;
+  width: 5.5em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2em;
+}
+
+.container .logo {
+  z-index: 980;
+  width: 5.5em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2em;
+}
+
+.container .experience-logo {
+  z-index: 980;
+  width: 5.5em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2.5em;
+}
+
+@-webkit-keyframes outwards {
+  0% {
+    width: 1em;
+    height: 15px;
+    position: absolute;
+    top: 9.75em;
+    left: 50%;
+    margin-left: -.7em;
+    border-radius: 5em;
+  }
+  100% {
+    width: 5em;
+    height: 15px;
+    position: absolute;
+    top: 9.75em;
+    left: 50%;
+    margin-left: -2.5em;
+    border-radius: 5em;
+  }
+}
+
+@keyframes outwards {
+  0% {
+    width: 1em;
+    height: 15px;
+    position: absolute;
+    top: 9.75em;
+    left: 50%;
+    margin-left: -.7em;
+    border-radius: 5em;
+  }
+  100% {
+    width: 5em;
+    height: 15px;
+    position: absolute;
+    top: 9.75em;
+    left: 50%;
+    margin-left: -2.5em;
+    border-radius: 5em;
+  }
+}
+
+@-webkit-keyframes outwards-skills {
+  0% {
+    width: 1em;
+    height: 15px;
+    left: 50%;
+    margin-left: -1.5em;
+    border-radius: 5em;
+  }
+  100% {
+    width: 5em;
+    height: 15px;
+    margin-right: -3.5em;
+    right: 50%;
+    border-radius: 5em;
+  }
+}
+
+@keyframes outwards-skills {
+  0% {
+    width: 1em;
+    height: 15px;
+    left: 50%;
+    margin-left: -1.5em;
+    border-radius: 5em;
+  }
+  100% {
+    width: 5em;
+    height: 15px;
+    margin-right: -3.5em;
+    right: 50%;
+    border-radius: 5em;
+  }
+}
+
+@-webkit-keyframes outwards-contact {
+  0% {
+    width: 1em;
+    height: 15px;
+    left: 50%;
+    margin-left: -1.5em;
+    border-radius: 5em;
+  }
+  100% {
+    width: 5em;
+    height: 15px;
+    margin-right: -3.5em;
+    right: 50%;
+    border-radius: 5em;
+  }
+}
+
+@keyframes outwards-contact {
+  0% {
+    width: 1em;
+    height: 15px;
+    left: 50%;
+    margin-left: -1.5em;
+    border-radius: 5em;
+  }
+  100% {
+    width: 5em;
+    height: 15px;
+    margin-right: -3.5em;
+    right: 50%;
+    border-radius: 5em;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0.15;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.15;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+
+@keyframes load {
+  from {
+    width: 0%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    background: var(--bg-color);
+    position: relative;
+    margin-top: 3.6em;
+    padding: 3em;
+    text-align: center;
+    height: 850px;
+  }
+  .about .about-title {
+    font-family: 'lovelo';
+    color: var(--primary-color);
+    font-size: 3em;
+    position: relative;
+    margin-top: 1em;
+    opacity: 0;
+    -webkit-animation: fadeIn 1s ease-in;
+            animation: fadeIn 1s ease-in;
+  }
+  .about .about-underline {
+    width: 1em;
+    height: 15px;
+    position: absolute;
+    background: var(--secondary-color);
+    top: 9.75em;
+    left: 50%;
+    margin-left: -.7em;
+    border-radius: 5em;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .about .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .content .about-text {
+    font-family: 'now';
+    color: white;
+    padding-top: .7em;
+    padding-bottom: 2em;
+    opacity: 0;
+    -webkit-animation: fadeIn 2s ease-in;
+            animation: fadeIn 2s ease-in;
+    text-align: left;
+    text-indent: 6%;
+    line-height: 1.45em;
+    width: 98%;
+  }
+  .about .content .profile-pic {
+    width: 22em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .about {
+    background: var(--bg-color);
+    position: relative;
+    margin-top: 3.6em;
+    padding: 3em;
+    text-align: center;
+    height: 500px;
+  }
+  .about .about-title {
+    font-family: 'lovelo';
+    color: var(--primary-color);
+    font-size: 3em;
+    position: relative;
+    margin-top: 1em;
+    opacity: 0;
+    -webkit-animation: fadeIn 1s ease-in;
+            animation: fadeIn 1s ease-in;
+  }
+  .about .about-underline {
+    width: 1em;
+    height: 15px;
+    position: absolute;
+    background: var(--secondary-color);
+    top: 9.75em;
+    left: 50%;
+    margin-left: -.7em;
+    border-radius: 5em;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .about .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: -1em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .about .content .about-text {
+    font-family: 'now';
+    color: white;
+    padding-top: 2.5em;
+    opacity: 0;
+    -webkit-animation: fadeIn 2s ease-in;
+            animation: fadeIn 2s ease-in;
+    text-align: left;
+    text-indent: 6%;
+    line-height: 1.45em;
+    width: 28em;
+  }
+  .about .content .profile-pic {
+    width: 22em;
+    margin-left: 2em;
+  }
+}
+
+.contact-section {
+  background: var(--bg-color);
+  margin-top: -1.4em;
+  padding-top: 3em;
+  padding-left: 8%;
+  padding-right: 3em;
+  padding-bottom: 3em;
+  display: block;
+  height: 790px;
+}
+
+.contact-section .container {
+  margin: 2em;
+  padding-top: 3em;
+  background-color: #333030;
+  border-radius: 3em;
+  position: relative;
+  width: 21em;
+  position: absolute;
+  left: 50%;
+  margin-left: -10.5em;
+}
+
+.contact-section .container h2 {
+  text-align: center;
+  color: var(--primary-color);
+  font-family: 'lovelo';
+  font-size: 3em;
+  position: relative;
+}
+
+.contact-section .container .contact-underline {
+  width: 1em;
+  height: 15px;
+  position: absolute;
+  background: var(--secondary-color);
+  top: 9.5em;
+  border-radius: 5em;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.contact-section .container .form {
+  padding-bottom: 2em;
+  color: var(--secondary-color);
+  font-family: "now";
+  width: 10em;
+  padding-left: 3em;
+  margin-top: -1em;
+}
+
+.contact-section .container .form input {
+  border-radius: 1em;
+  margin-bottom: 1em;
+  margin-top: .7em;
+  padding: 1em;
+  width: 16em;
+  font-family: "now";
+}
+
+.contact-section .container .form textarea {
+  border-radius: 1em;
+  margin-bottom: 1em;
+  margin-top: .7em;
+  text-indent: 5px;
+  padding: .5em;
+  padding-top: .7em;
+  font-family: "now";
+  width: 17em;
+}
+
+.contact-section .container .form .submit-btn {
+  padding: .7em;
+  margin-left: 5em;
+  width: 8em;
+  border-radius: 2em;
+  color: black;
+  font-family: 'lovelo';
+  background-color: var(--secondary-color);
+}
+
+.project-body {
+  margin: 0;
+}
+
+.project-content section.software {
+  text-align: center;
+  background: url("../images/software.jpg");
+  background-size: 100%;
+  position: absolute;
+  top: 2.75em;
+  width: 100%;
+  height: 280px;
+}
+
+.project-content section.software:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  opacity: 50%;
+}
+
+.project-content section.software h1 {
+  padding-top: 1em;
+  margin-bottom: 0em;
+  font-family: "righteous";
+  text-transform: uppercase;
+  font-size: 3em;
+  color: var(--secondary-color);
+  position: relative;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.project-content section.software .columns {
+  padding-bottom: 3em;
+  border-width: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 12px;
+}
+
+.project-content section.software .columns ul.languages {
+  text-align: center;
+  list-style-type: none;
+  display: inline;
+  color: white;
+  margin-left: -2.7em;
+}
+
+.project-content section.software .columns ul.languages a {
+  font-family: 'lovelo';
+  font-size: 13px;
+  z-index: 100;
+  border: 2px solid var(--primary-color);
+  border-radius: 1em;
+  background: var(--primary-color);
+  color: white;
+  position: relative;
+  padding: .8em;
+  margin: 5px;
+}
+
+.project-content section.software .columns ul.languages a:hover {
+  cursor: pointer;
+  text-transform: bold;
+  background: white;
+  color: var(--primary-color);
+  border: 2px solid white;
+}
+
+.project-content section.design {
+  margin-top: 17.5em;
+  background: url("../images/design.jpg") no-repeat;
+  background-size: cover;
+  height: 290px;
+  z-index: 200;
+  position: relative;
+  text-align: center;
+}
+
+.project-content section.design:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  top: 0;
+  left: 0;
+  opacity: .65;
+  z-index: -100;
+}
+
+.project-content section.design h1 {
+  font-size: 3em;
+  font-family: "righteous";
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  text-align: center;
+  padding-top: 1.6em;
+  margin-bottom: .6em;
+  text-decoration: underline;
+}
+
+.project-content section.design .cad {
+  color: white;
+  font-family: 'lovelo';
+  font-size: 13px;
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
+  padding: 1em;
+  width: 10em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.project-content section.design .cad:hover {
+  color: var(--primary-color);
+  background: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.project-content section.hardware {
+  background: url("../images/hardware.jpg") no-repeat;
+  height: 290px;
+  background-size: cover;
+  margin-top: -2.5em;
+  position: relative;
+  z-index: 200;
+}
+
+.project-content section.hardware:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  top: 0;
+  left: 0;
+  opacity: .65;
+  z-index: -100;
+}
+
+.project-content section.hardware h1 {
+  font-size: 3em;
+  font-family: 'righteous';
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--secondary-color);
+  text-decoration: underline;
+  padding-top: 1.75em;
+}
+
+.project-content section.hardware .columns {
+  text-align: center;
+}
+
+.project-content section.hardware .columns .arduino {
+  color: white;
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
+  font-family: 'lovelo';
+  font-size: 13px;
+  padding: 1em;
+  border-radius: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.project-content section.hardware .columns .arduino:hover {
+  color: var(--primary-color);
+  background: white;
+  border: 2px solid white;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+}
+
+.python-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.python-popup .bg-modal {
+  width: 100%;
+  height: 1230px;
+  background-color: black;
+  opacity: 70%;
+  position: absolute;
+  top: 0;
+  z-index: 998;
+}
+
+.python-popup .py-popup {
+  width: 425px;
+  height: 800px;
+  background-color: white;
+  position: absolute;
+  top: 3em;
+  z-index: 999;
+  border-radius: 1em;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.python-popup .py-popup .close {
+  position: absolute;
+  top: 0;
+  font-size: 45px;
+  right: 14px;
+  font-weight: bold;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.python-popup .py-popup .page-indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  margin-left: -1em;
+  top: 2%;
+}
+
+.python-popup .py-popup .page-indicators .py-indicator {
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: .35em;
+}
+
+.python-popup .py-popup .page-indicators .opencv-indicator {
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: .3em;
+  opacity: .2;
+}
+
+.python-popup .py-popup .page-indicators .numpy-indicator {
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: .2;
+}
+
+.python-popup .py-popup h1 {
+  color: var(--primary-color);
+  font-family: 'righteous';
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+}
+
+.python-popup .py-popup .python-project {
+  position: relative;
+  margin-top: 1em;
+  display: block;
+}
+
+.python-popup .py-popup .python-project img {
+  width: 23em;
+  height: 15.5em;
+  position: absolute;
+  left: 50%;
+  margin-left: -11.6em;
+  border: 2px solid black;
+  border-radius: 1em;
+}
+
+.python-popup .py-popup .python-project .arrow {
+  width: 2.5em;
+  position: absolute;
+  top: 10.5em;
+  margin-left: 10.25em;
+  z-index: 995;
+  border: 0px;
+}
+
+.python-popup .py-popup .python-project .arrow:hover {
+  cursor: pointer;
+}
+
+.python-popup .py-popup .python-project h3 {
+  font-family: 'lovelo';
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  padding-top: 14.5em;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.python-popup .py-popup .python-project p {
+  margin-top: 1em;
+  width: 25em;
+  font-family: 'now';
+  color: black;
+  font-size: 85%;
+  line-height: 1.5em;
+  padding: 2em;
+  padding-top: .75em;
+  text-indent: 2em;
+  margin-left: 1em;
+}
+
+.python-popup .py-popup .python-project .code {
+  position: absolute;
+  top: 96%;
+  left: 33%;
+  padding: .8em;
+  background: var(--secondary-color);
+  border-radius: 1em;
+  border: 2px solid var(--secondary-color);
+  font-family: 'lovelo';
+  cursor: pointer;
+}
+
+.python-popup .py-popup .open-cv {
+  position: relative;
+  margin-top: 1em;
+  display: none;
+}
+
+.python-popup .py-popup .open-cv img {
+  width: 23em;
+  position: absolute;
+  left: 50%;
+  margin-left: -11.6em;
+  border-radius: 1em;
+}
+
+.python-popup .py-popup .open-cv .back-arrow {
+  width: 2.5em;
+  position: absolute;
+  top: 16.63em;
+  margin-left: -12.8em;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 995;
+}
+
+.python-popup .py-popup .open-cv .back-arrow:hover {
+  cursor: pointer;
+}
+
+.python-popup .py-popup .open-cv .arrow2 {
+  width: 2.5em;
+  position: absolute;
+  top: 43.5%;
+  margin-left: 10.25em;
+  z-index: 995;
+  border: 0px;
+}
+
+.python-popup .py-popup .open-cv .arrow2:hover {
+  cursor: pointer;
+}
+
+.python-popup .py-popup .open-cv h3 {
+  font-family: 'lovelo';
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  padding-top: 14.5em;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.python-popup .py-popup .open-cv p {
+  margin-top: 1em;
+  width: 25em;
+  font-family: 'now';
+  color: black;
+  font-size: 85%;
+  line-height: 1.5em;
+  padding: 2em;
+  padding-top: .75em;
+  text-indent: 2em;
+  margin-left: 1em;
+}
+
+.python-popup .py-popup .open-cv .code {
+  position: absolute;
+  top: 98%;
+  left: 33%;
+  padding: .8em;
+  background: var(--secondary-color);
+  border-radius: 1em;
+  border: 2px solid var(--secondary-color);
+  font-family: 'lovelo';
+  cursor: pointer;
+}
+
+.python-popup .py-popup .numpy {
+  position: relative;
+  margin-top: 1em;
+  display: none;
+}
+
+.python-popup .py-popup .numpy img {
+  width: 23em;
+  position: absolute;
+  left: 50%;
+  margin-left: -11.6em;
+  border-radius: 1em;
+}
+
+.python-popup .py-popup .numpy .back-arrow2 {
+  width: 2.5em;
+  position: absolute;
+  top: 42.5%;
+  margin-left: -12.8em;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 995;
+}
+
+.python-popup .py-popup .numpy .back-arrow2:hover {
+  cursor: pointer;
+}
+
+.python-popup .py-popup .numpy h3 {
+  font-family: 'lovelo';
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  padding-top: 14.5em;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.python-popup .py-popup .numpy p {
+  margin-top: 1em;
+  width: 25em;
+  font-family: 'now';
+  color: black;
+  font-size: 85%;
+  line-height: 1.5em;
+  padding: 2em;
+  padding-top: .75em;
+  text-indent: 2em;
+  margin-left: 1em;
+}
+
+.python-popup .py-popup .numpy .code {
+  position: absolute;
+  top: 96.5%;
+  left: 33%;
+  padding: .8em;
+  background: var(--secondary-color);
+  border-radius: 1em;
+  border: 2px solid var(--secondary-color);
+  font-family: 'lovelo';
+  cursor: pointer;
+}
+
+.java-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.java-popup .bg-modal {
+  width: 100%;
+  height: 1230px;
+  background-color: black;
+  opacity: 70%;
+  position: absolute;
+  top: 0;
+  z-index: 998;
+}
+
+.java-popup .popup {
+  width: 425px;
+  height: 800px;
+  background-color: white;
+  position: absolute;
+  top: 3em;
+  z-index: 999;
+  border-radius: 1em;
+  text-transform: uppercase;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.java-popup .popup .close {
+  position: absolute;
+  top: 0;
+  font-size: 45px;
+  right: 14px;
+  font-weight: bold;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.java-popup .popup img {
+  width: 21em;
+  height: 18em;
+  border-radius: 1em;
+  position: absolute;
+  top: 28%;
+  left: 10%;
+}
+
+.fed-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.fed-popup .bg-modal {
+  width: 100%;
+  height: 1230px;
+  background-color: black;
+  opacity: 70%;
+  position: absolute;
+  top: 0;
+  z-index: 998;
+}
+
+.fed-popup .popup {
+  width: 425px;
+  height: 810px;
+  background-color: white;
+  position: absolute;
+  top: 3em;
+  z-index: 999;
+  border-radius: 1em;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.fed-popup .popup .close {
+  position: absolute;
+  top: 0;
+  font-size: 45px;
+  right: 14px;
+  font-weight: bold;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.fed-popup .popup h1 {
+  color: var(--primary-color);
+  font-family: 'righteous';
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+}
+
+.fed-popup .popup .portfolio {
+  position: relative;
+  margin-top: 1em;
+  display: block;
+}
+
+.fed-popup .popup .portfolio img {
+  width: 23em;
+  position: absolute;
+  left: 50%;
+  margin-left: -11.6em;
+  border-radius: 1em;
+}
+
+.fed-popup .popup .portfolio h3 {
+  font-family: 'lovelo';
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  padding-top: 14.5em;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.fed-popup .popup .portfolio p {
+  margin-top: .5em;
+  width: 26em;
+  font-family: 'now';
+  color: black;
+  font-size: 85%;
+  line-height: 1.5em;
+  padding: 2em;
+  padding-top: .75em;
+  text-indent: 2em;
+  margin-left: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.cad-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.cad-popup .bg-modal {
+  width: 100%;
+  height: 1230px;
+  background-color: black;
+  opacity: 70%;
+  position: absolute;
+  top: 0;
+  z-index: 998;
+}
+
+.cad-popup .popup {
+  width: 425px;
+  height: 800px;
+  background-color: white;
+  position: absolute;
+  top: 3em;
+  z-index: 999;
+  border-radius: 1em;
+  border-radius: 1em;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.cad-popup .popup .close {
+  position: absolute;
+  top: 0;
+  font-size: 45px;
+  right: 14px;
+  font-weight: bold;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.cad-popup .popup h1 {
+  color: var(--primary-color);
+  font-family: 'righteous';
+  font-size: 2.25em;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+}
+
+.cad-popup .popup .telescope-mount {
+  position: relative;
+  margin-top: 1em;
+  display: block;
+}
+
+.cad-popup .popup .telescope-mount img {
+  width: 23em;
+  position: absolute;
+  left: 50%;
+  margin-left: -11.6em;
+  border-radius: 1em;
+}
+
+.cad-popup .popup .telescope-mount h3 {
+  font-family: 'lovelo';
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  padding-top: 15em;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.cad-popup .popup .telescope-mount p {
+  margin-top: 0em;
+  width: 26em;
+  font-family: 'now';
+  color: black;
+  font-size: 85%;
+  line-height: 1.5em;
+  padding: 2em;
+  padding-top: 1em;
+  text-indent: 2em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.cad-popup .popup .telescope-mount .file {
+  position: absolute;
+  top: 98%;
+  left: 33%;
+  padding: .8em;
+  background: var(--secondary-color);
+  border-radius: 1em;
+  border: 2px solid var(--secondary-color);
+  font-family: 'lovelo';
+  cursor: pointer;
+}
+
+.arduino-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.arduino-popup .bg-modal {
+  width: 100%;
+  height: 1230px;
+  background-color: black;
+  opacity: 70%;
+  position: absolute;
+  top: 0;
+  z-index: 998;
+}
+
+.arduino-popup .popup {
+  width: 425px;
+  height: 800px;
+  background-color: white;
+  position: absolute;
+  top: 3em;
+  z-index: 999;
+  border-radius: 1em;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.arduino-popup .popup .close {
+  position: absolute;
+  top: 0;
+  font-size: 45px;
+  right: 14px;
+  font-weight: bold;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.arduino-popup .popup .arduino-page-indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 49%;
+  margin-left: -1em;
+  top: 2%;
+}
+
+.arduino-popup .popup .arduino-page-indicators .led-inidicator {
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: .35em;
+}
+
+.arduino-popup .popup .arduino-page-indicators .snake-game-indicator {
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: .3em;
+  opacity: .2;
+}
+
+.arduino-popup .popup .arduino-page-indicators .digital-hourglass-indicator {
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: .2;
+  margin-right: .3em;
+}
+
+.arduino-popup .popup .arduino-page-indicators .smart-bin-indicator {
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: .2;
+}
+
+.arduino-popup .popup h1 {
+  color: var(--primary-color);
+  font-family: 'righteous';
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+}
+
+.arduino-popup .popup .lamp {
+  position: relative;
+  margin-top: 1em;
+  display: block;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.arduino-popup .popup .lamp img {
+  width: 23em;
+  position: absolute;
+  left: 50%;
+  margin-left: -11.6em;
+  border-radius: 1em;
+}
+
+.arduino-popup .popup .lamp .arduino-arrow {
+  width: 2.5em;
+  position: absolute;
+  top: 17.25em;
+  margin-left: 10.25em;
+  z-index: 995;
+  border: 0px;
+}
+
+.arduino-popup .popup .lamp .arduino-arrow:hover {
+  cursor: pointer;
+}
+
+.arduino-popup .popup .lamp h3 {
+  font-family: 'lovelo';
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  padding-top: 15em;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.arduino-popup .popup .lamp p {
+  margin-top: 0em;
+  width: 26em;
+  font-family: 'now';
+  color: black;
+  font-size: 85%;
+  line-height: 1.5em;
+  padding: 2em;
+  padding-top: 1em;
+  text-indent: 2em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.arduino-popup .popup .lamp .files {
+  position: absolute;
+  top: 99%;
+  left: 33%;
+  padding: .8em;
+  background: var(--secondary-color);
+  border-radius: 1em;
+  border: 2px solid var(--secondary-color);
+  font-family: 'lovelo';
+  cursor: pointer;
+}
+
+.arduino-popup .popup .snake-game {
+  position: relative;
+  margin-top: 1em;
+  display: none;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.arduino-popup .popup .snake-game img {
+  width: 23em;
+  position: absolute;
+  left: 50%;
+  margin-left: -11.6em;
+  border-radius: 1em;
+}
+
+.arduino-popup .popup .snake-game .arduino-arrow2 {
+  width: 2.5em;
+  position: absolute;
+  top: 47%;
+  margin-left: 10.25em;
+  z-index: 995;
+  border: 0px;
+}
+
+.arduino-popup .popup .snake-game .arduino-arrow2:hover {
+  cursor: pointer;
+}
+
+.arduino-popup .popup .snake-game .arduino-back-arrow {
+  width: 2.5em;
+  position: absolute;
+  top: 47%;
+  margin-left: -12.8em;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 995;
+}
+
+.arduino-popup .popup .snake-game .arduino-back-arrow:hover {
+  cursor: pointer;
+}
+
+.arduino-popup .popup .snake-game h3 {
+  font-family: 'lovelo';
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  padding-top: 15.5em;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.arduino-popup .popup .snake-game p {
+  margin-top: 0em;
+  width: 26em;
+  font-family: 'now';
+  color: black;
+  font-size: 85%;
+  line-height: 1.5em;
+  padding: 2em;
+  padding-top: 1em;
+  text-indent: 2em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.arduino-popup .popup .snake-game .files {
+  position: absolute;
+  top: 97%;
+  left: 33%;
+  padding: .8em;
+  background: var(--secondary-color);
+  border-radius: 1em;
+  border: 2px solid var(--secondary-color);
+  font-family: 'lovelo';
+  cursor: pointer;
+}
+
+.arduino-popup .popup .hourglass {
+  position: relative;
+  margin-top: 1em;
+  display: none;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.arduino-popup .popup .hourglass img {
+  width: 23em;
+  position: absolute;
+  left: 50%;
+  margin-left: -11.6em;
+  border-radius: 1em;
+}
+
+.arduino-popup .popup .hourglass .arduino-arrow3 {
+  width: 2.5em;
+  position: absolute;
+  top: 48%;
+  margin-left: 10.25em;
+  z-index: 995;
+  border: 0px;
+}
+
+.arduino-popup .popup .hourglass .arduino-arrow3:hover {
+  cursor: pointer;
+}
+
+.arduino-popup .popup .hourglass .arduino-back-arrow2 {
+  width: 2.5em;
+  position: absolute;
+  top: 48%;
+  margin-left: -12.8em;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 995;
+}
+
+.arduino-popup .popup .hourglass .arduino-back-arrow2:hover {
+  cursor: pointer;
+}
+
+.arduino-popup .popup .hourglass h3 {
+  font-family: 'lovelo';
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  padding-top: 15.5em;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.arduino-popup .popup .hourglass p {
+  margin-top: 0em;
+  width: 27em;
+  font-family: 'now';
+  color: black;
+  font-size: 85%;
+  line-height: 1.5em;
+  padding: 2em;
+  padding-top: 1em;
+  text-indent: 2em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.arduino-popup .popup .hourglass .files {
+  position: absolute;
+  top: 99%;
+  left: 33%;
+  padding: .8em;
+  background: var(--secondary-color);
+  border-radius: 1em;
+  border: 2px solid var(--secondary-color);
+  font-family: 'lovelo';
+  cursor: pointer;
+}
+
+.arduino-popup .popup .smartbin {
+  position: relative;
+  margin-top: 1em;
+  display: none;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.arduino-popup .popup .smartbin img {
+  width: 23em;
+  position: absolute;
+  left: 50%;
+  margin-left: -11.6em;
+  border-radius: 1em;
+}
+
+.arduino-popup .popup .smartbin .arduino-back-arrow3 {
+  width: 2.5em;
+  position: absolute;
+  top: 45%;
+  margin-left: -12.8em;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 995;
+}
+
+.arduino-popup .popup .smartbin .arduino-back-arrow3:hover {
+  cursor: pointer;
+}
+
+.arduino-popup .popup .smartbin h3 {
+  font-family: 'lovelo';
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  padding-top: 14em;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.arduino-popup .popup .smartbin p {
+  margin-top: 0em;
+  width: 27em;
+  font-family: 'now';
+  color: black;
+  font-size: 85%;
+  line-height: 1.5em;
+  padding: 2em;
+  padding-top: 1em;
+  text-indent: 2em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.arduino-popup .popup .smartbin .files {
+  position: absolute;
+  top: 99%;
+  left: 33%;
+  padding: .8em;
+  background: var(--secondary-color);
+  border-radius: 1em;
+  border: 2px solid var(--secondary-color);
+  font-family: 'lovelo';
+  cursor: pointer;
+}
+
+body.experience {
+  margin: 0;
+}
+
+section.robotics {
+  margin-top: -2.4em;
+  background: url("../images/robotics.png") no-repeat;
+  background-size: cover;
+  height: 290px;
+  z-index: 200;
+  position: relative;
+  text-align: center;
+}
+
+section.robotics:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  top: 0;
+  left: 0;
+  opacity: .65;
+  z-index: -100;
+}
+
+section.robotics h1 {
+  font-size: 3em;
+  font-family: "righteous";
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  text-align: center;
+  padding-top: 1.8em;
+  margin-bottom: .6em;
+  text-decoration: underline;
+}
+
+section.robotics .details {
+  color: white;
+  font-family: 'lovelo';
+  font-size: 13px;
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
+  padding: 1em;
+  width: 10em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+section.robotics .details:hover {
+  color: var(--primary-color);
+  background: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+section.cadets {
+  margin-top: -2.6em;
+  background: url("../images/plane.jpg") no-repeat;
+  background-size: cover;
+  height: 290px;
+  z-index: 200;
+  position: relative;
+  text-align: center;
+}
+
+section.cadets:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  top: 0;
+  left: 0;
+  opacity: .65;
+  z-index: -100;
+}
+
+section.cadets h1 {
+  font-size: 3em;
+  font-family: "righteous";
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  text-align: center;
+  padding-top: 1.8em;
+  margin-bottom: .6em;
+  text-decoration: underline;
+}
+
+section.cadets .details {
+  color: white;
+  font-family: 'lovelo';
+  font-size: 13px;
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
+  padding: 1em;
+  width: 10em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+section.cadets .details:hover {
+  color: var(--primary-color);
+  background: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+section.interact {
+  margin-top: -2.6em;
+  background: url("../images/interact-bg.png") no-repeat;
+  background-size: cover;
+  height: 290px;
+  z-index: 200;
+  position: relative;
+  text-align: center;
+}
+
+section.interact:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  top: 0;
+  left: 0;
+  opacity: .65;
+  z-index: -100;
+}
+
+section.interact h1 {
+  font-size: 3em;
+  font-family: "righteous";
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  text-align: center;
+  padding-top: 1.9em;
+  margin-bottom: .6em;
+  text-decoration: underline;
+}
+
+section.interact .details {
+  color: white;
+  font-family: 'lovelo';
+  font-size: 13px;
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
+  padding: 1em;
+  width: 10em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+section.interact .details:hover {
+  color: var(--primary-color);
+  background: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.robotics-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.robotics-popup .bg-modal {
+  width: 100%;
+  height: 1230px;
+  background-color: black;
+  opacity: 70%;
+  position: absolute;
+  top: 0;
+  z-index: 998;
+}
+
+.robotics-popup .popup {
+  width: 425px;
+  height: 800px;
+  background-color: white;
+  position: absolute;
+  top: 3em;
+  z-index: 999;
+  border-radius: 1em;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.robotics-popup .popup .close {
+  position: absolute;
+  top: 0;
+  font-size: 45px;
+  right: 14px;
+  font-weight: bold;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.robotics-popup .popup h1 {
+  color: var(--primary-color);
+  font-family: 'righteous';
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+}
+
+.robotics-popup .popup .allspark-nine {
+  position: relative;
+  margin-top: 1em;
+  display: block;
+}
+
+.robotics-popup .popup .allspark-nine img {
+  width: 16.5em;
+  position: absolute;
+  left: 62%;
+  margin-left: -11.6em;
+  border-radius: 50%;
+}
+
+.robotics-popup .popup .allspark-nine h3 {
+  font-family: 'lovelo';
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  width: 18em;
+  padding-top: 13.4em;
+  color: black;
+  margin-bottom: 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -9em;
+  text-align: center;
+}
+
+.robotics-popup .popup .allspark-nine p {
+  margin-top: 0em;
+  width: 26em;
+  font-family: 'now';
+  color: black;
+  font-size: 85%;
+  line-height: 1.5em;
+  padding: 2em;
+  position: absolute;
+  top: 23em;
+  text-indent: 2em;
+  margin-left: .8em;
+  margin-bottom: 1em;
+}
+
+.cadets-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.cadets-popup .bg-modal {
+  width: 100%;
+  height: 1230px;
+  background-color: black;
+  opacity: 70%;
+  position: absolute;
+  top: 0;
+  z-index: 998;
+}
+
+.cadets-popup .popup {
+  width: 425px;
+  height: 800px;
+  background-color: white;
+  position: absolute;
+  top: 3em;
+  z-index: 999;
+  border-radius: 1em;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.cadets-popup .popup .close {
+  position: absolute;
+  top: 0;
+  font-size: 45px;
+  right: 14px;
+  font-weight: bold;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.cadets-popup .popup h1 {
+  color: var(--primary-color);
+  font-family: 'righteous';
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+}
+
+.cadets-popup .popup .cadets {
+  position: relative;
+  margin-top: 1em;
+  display: block;
+}
+
+.cadets-popup .popup .cadets img {
+  width: 16.5em;
+  position: absolute;
+  left: 62%;
+  margin-left: -11.6em;
+  border-radius: 50%;
+}
+
+.cadets-popup .popup .cadets h3 {
+  font-family: 'lovelo';
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  padding-top: 15em;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.cadets-popup .popup .cadets p {
+  margin-top: 0em;
+  width: 26em;
+  font-family: 'now';
+  color: black;
+  font-size: 85%;
+  line-height: 1.5em;
+  padding: 2em;
+  padding-top: 1em;
+  text-indent: 2em;
+  margin-left: .8em;
+  margin-bottom: 1em;
+}
+
+.interact-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.interact-popup .bg-modal {
+  width: 100%;
+  height: 1230px;
+  background-color: black;
+  opacity: 70%;
+  position: absolute;
+  top: 0;
+  z-index: 998;
+}
+
+.interact-popup .popup {
+  width: 425px;
+  height: 800px;
+  background-color: white;
+  position: absolute;
+  top: 3em;
+  z-index: 999;
+  border-radius: 1em;
+  opacity: 1;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.interact-popup .popup .close {
+  position: absolute;
+  top: 0;
+  font-size: 45px;
+  right: 14px;
+  font-weight: bold;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.interact-popup .popup h1 {
+  color: var(--primary-color);
+  font-family: 'righteous';
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+}
+
+.interact-popup .popup .interact {
+  position: relative;
+  margin-top: 1em;
+  display: block;
+}
+
+.interact-popup .popup .interact img {
+  width: 16.5em;
+  position: absolute;
+  left: 62%;
+  margin-left: -11.6em;
+  border-radius: 50%;
+}
+
+.interact-popup .popup .interact h3 {
+  font-family: 'lovelo';
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  padding-top: 15em;
+  color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.interact-popup .popup .interact p {
+  margin-top: 0em;
+  width: 26em;
+  font-family: 'now';
+  color: black;
+  font-size: 85%;
+  line-height: 1.5em;
+  padding: 2em;
+  padding-top: 1em;
+  text-indent: 2em;
+  margin-left: 1em;
+  margin-bottom: .8em;
+}
+
+@media only screen and (min-width: 744px) {
+  .hamburger {
+    display: none;
+  }
+  .left-side, .right-side {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .left-side a, .right-side a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-right: 2em;
+  }
+  .left-side a:hover, .right-side a:hover {
+    color: var(--primary-color);
+  }
+  .left-side {
+    margin-top: -.5em;
+    position: absolute;
+    top: 1.2em;
+    right: 56%;
+    font-weight: 900;
+    -webkit-animation: fadeIn 2s ease-in;
+            animation: fadeIn 2s ease-in;
+  }
+  .right-side {
+    margin-top: -.5em;
+    position: absolute;
+    left: 55%;
+    top: 1.2em;
+    font-weight: 900;
+    -webkit-animation: fadeIn 2s ease-in;
+            animation: fadeIn 2s ease-in;
+  }
+  .right-side .github {
+    width: 26px;
+    margin-top: -.35em;
+  }
+  .hero {
+    display: block;
+    height: 76vh;
+  }
+  .hero .heading {
+    font-family: "lovelo";
+    font-size: 4.5em;
+    text-align: center;
+    margin-bottom: .3em;
+    margin-top: 1.75em;
+    color: white;
+  }
+  .hero .typing {
+    text-align: center;
+    font-family: "lovelo";
+    padding: .3em;
+    margin-bottom: 2em;
+    margin-left: 18%;
+    margin-right: 18%;
+    font-size: 1.2em;
+    border: 3px solid var(--secondary-color);
+    background: var(--secondary-color);
+    position: relative;
+  }
+  .hero .typing:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 64%;
+    border-right: 2px solid black;
+    -webkit-animation: blink .75s infinite ease;
+            animation: blink .75s infinite ease;
+  }
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .hero .right-col .dp {
+    width: 21.5em;
+    height: 21.5em;
+    border-radius: 50%;
+    border: 10px solid var(--secondary-color);
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .hero:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 51em;
+    background: var(--primary-color);
+    left: 0;
+    top: 2em;
+    opacity: 75%;
+    z-index: -1;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    height: 90vh;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
+    width: 60em;
+  }
+  .hero .heading {
+    font-family: "lovelo";
+    font-size: 4.5em;
+    text-align: center;
+    margin-bottom: .3em;
+    margin-top: 2.75em;
+    color: white;
+  }
+  .hero .typing {
+    text-align: left;
+    font-family: "lovelo";
+    padding: .3em;
+    margin-bottom: 2em;
+    margin-left: 1%;
+    margin-right: 18%;
+    font-size: 1.2em;
+    border: 3px solid var(--secondary-color);
+    background: var(--secondary-color);
+    position: relative;
+  }
+  .hero .typing:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 64%;
+    border-right: 2px solid black;
+    -webkit-animation: blink .75s infinite ease;
+            animation: blink .75s infinite ease;
+  }
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .hero .dp {
+    width: 21.5em;
+    height: 21.5em;
+    border-radius: 50%;
+    border: 10px solid var(--secondary-color);
+    position: absolute;
+    left: 58%;
+    top: 25%;
+  }
+  .hero:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 51em;
+    background: var(--primary-color);
+    left: 0;
+    top: 2em;
+    opacity: 75%;
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 743px) {
+  .hamburger {
+    cursor: pointer;
+    position: fixed;
+    top: .4em;
+    right: .4em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: .1em;
+    z-index: 982;
+    border: .5px solid white;
+    background: white;
+    opacity: 1;
+    border-radius: 3px;
+    padding: .5em;
+  }
+  nav {
+    position: fixed;
+    z-index: 981;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100vh;
+    padding: 0em;
+    clip-path: circle(100px at 95% -20%);
+    -webkit-clip-path: circle(100px at 95% -20%);
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+  }
+  nav ul.left-side {
+    margin-top: 5.5em;
+  }
+  nav li {
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 1em;
+    margin-right: .75 em;
+  }
+  nav li:hover {
+    font-weight: 900;
+  }
+  nav.open {
+    clip-path: circle(1100px at 95% -15%);
+    -webkit-clip-path: circle(1100px at 95% -15%);
+  }
+  .left-side, .right-side {
+    list-style-type: none;
+  }
+  .left-side a, .right-side a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+  .left-side a:hover, .right-side a:hover {
+    color: var(--primary-color);
+  }
+  .left-side {
+    font-weight: 900;
+    -webkit-animation: fadeIn 2s ease-in;
+            animation: fadeIn 2s ease-in;
+  }
+  .right-side {
+    font-weight: 900;
+    -webkit-animation: fadeIn 2s ease-in;
+            animation: fadeIn 2s ease-in;
+  }
+  .right-side .github {
+    width: 40px;
+  }
+  .hero {
+    display: block;
+    height: 76vh;
+  }
+  .hero .heading {
+    font-family: "lovelo";
+    font-size: 4.5em;
+    text-align: center;
+    margin-bottom: .3em;
+    margin-top: 1.25em;
+    color: white;
+  }
+  .hero .typing {
+    text-align: center;
+    font-family: "lovelo";
+    padding: .3em;
+    margin-bottom: 2em;
+    margin-left: 18%;
+    margin-right: 18%;
+    font-size: 1.2em;
+    border: 3px solid var(--secondary-color);
+    background: var(--secondary-color);
+    position: relative;
+  }
+  .hero .typing:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 64%;
+    border-right: 2px solid black;
+    -webkit-animation: blink .75s infinite ease;
+            animation: blink .75s infinite ease;
+  }
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .hero .right-col .dp {
+    width: 21.5em;
+    height: 21.5em;
+    border-radius: 50%;
+    border: 10px solid var(--secondary-color);
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .hero:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 51em;
+    background: var(--primary-color);
+    left: 0;
+    top: 2em;
+    opacity: 75%;
+    z-index: -1;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  section.skills {
+    margin: 0;
+    margin-top: -1.5em;
+    padding: 0;
+    background: #333030;
+    text-align: center;
+  }
+  section.skills .skills-header {
+    text-align: center;
+    position: relative;
+    padding-top: 4.5em;
+  }
+  section.skills .skills-header .title {
+    font-family: 'lovelo';
+    color: var(--secondary-color);
+    font-size: 3em;
+    position: relative;
+    margin-top: 1em;
+    opacity: 0;
+    -webkit-animation: fadeIn 1s ease-in;
+            animation: fadeIn 1s ease-in;
+  }
+  section.skills .skills-header .skills-underline {
+    width: 1em;
+    height: 15px;
+    position: absolute;
+    background: var(--primary-color);
+    top: 11.45em;
+    left: 50%;
+    margin-left: -.7em;
+    border-radius: 5em;
+    -webkit-animation: none;
+            animation: none;
+  }
+  section.skills .skills-container {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.skills .skills-container .python-skill {
+    display: block;
+    padding: 3em;
+    position: relative;
+    border: 2px solid var(--bg-color);
+    border-radius: 2em;
+    background: var(--bg-color);
+    width: 18em;
+    height: 28em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+  section.skills .skills-container .python-skill .logo {
+    width: 8em;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  section.skills .skills-container .python-skill h4 {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 37%;
+    font-family: 'righteous';
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  section.skills .skills-container .python-skill .dots {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    margin-left: -1.25em;
+  }
+  section.skills .skills-container .python-skill p {
+    margin-top: 16em;
+    color: white;
+    font-size: 1em;
+    font-family: 'now';
+    padding: 1em;
+    padding-bottom: 0;
+    margin-left: -2.35em;
+    width: 21em;
+    text-align: center;
+  }
+  section.skills .skills-container .python-skill .python-bar-holder {
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    display: block;
+    margin-top: -1em;
+    margin-bottom: 1em;
+    margin: 2em;
+    margin-left: -1.35em;
+    text-align: center;
+    width: 20em;
+    position: relative;
+  }
+  section.skills .skills-container .python-skill .python-bar-holder .python-bar {
+    background-image: radial-gradient(#30e6f7, #96e2e9);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-animation: load 2s 0s;
+            animation: load 2s 0s;
+    width: calc(65% - 28px);
+    height: 1px;
+    position: absolute;
+    left: 17.5%;
+    margin-left: -3.4em;
+    margin-top: -.15em;
+    margin-bottom: 2em;
+    z-index: 799;
+  }
+  section.skills .skills-container .python-skill .python-bar-holder h5 {
+    margin-top: .25em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-bottom: 0;
+    font-family: 'now';
+    color: black;
+    font-size: .7em;
+    text-align: center;
+    z-index: 800;
+  }
+  section.skills .skills-container .css-skill {
+    display: block;
+    padding: 3em;
+    position: relative;
+    border: 2px solid var(--bg-color);
+    border-radius: 2em;
+    background: var(--bg-color);
+    width: 18em;
+    height: 28em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+  section.skills .skills-container .css-skill .logo {
+    width: 7em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 12%;
+  }
+  section.skills .skills-container .css-skill h4 {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 39%;
+    font-family: 'righteous';
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  section.skills .skills-container .css-skill .dots {
+    position: absolute;
+    top: 55%;
+    left: 50.5%;
+    margin-left: -1.25em;
+  }
+  section.skills .skills-container .css-skill p {
+    margin-top: 16.5em;
+    color: white;
+    font-size: 1em;
+    font-family: 'now';
+    padding: 1em;
+    padding-bottom: 0;
+    margin-left: -2.35em;
+    width: 21em;
+    text-align: center;
+  }
+  section.skills .skills-container .css-skill .css-bar-holder {
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    display: block;
+    margin-top: -1em;
+    margin: 2em;
+    margin-left: -1.35em;
+    text-align: center;
+    width: 20em;
+    position: relative;
+  }
+  section.skills .skills-container .css-skill .css-bar-holder .css-bar {
+    background-image: radial-gradient(#30e6f7, #96e2e9);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-animation: load 2s 0s;
+            animation: load 2s 0s;
+    width: calc(80% - 28px);
+    height: 1px;
+    position: absolute;
+    left: 17.5%;
+    margin-left: -3.4em;
+    margin-top: -.15em;
+    z-index: 799;
+  }
+  section.skills .skills-container .css-skill .css-bar-holder h5 {
+    margin-top: .25em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-bottom: 0;
+    font-family: 'now';
+    color: black;
+    font-size: .7em;
+    text-align: center;
+    z-index: 800;
+  }
+  section.skills .skills-container .html-skill {
+    display: block;
+    padding: 3em;
+    position: relative;
+    border: 2px solid var(--bg-color);
+    border-radius: 2em;
+    background: var(--bg-color);
+    width: 18em;
+    height: 28em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+  section.skills .skills-container .html-skill .logo {
+    width: 8em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 18%;
+  }
+  section.skills .skills-container .html-skill h4 {
+    position: absolute;
+    left: 50.5%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 39%;
+    font-family: 'righteous';
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  section.skills .skills-container .html-skill .dots {
+    position: absolute;
+    top: 55%;
+    left: 50.5%;
+    margin-left: -1.25em;
+  }
+  section.skills .skills-container .html-skill p {
+    margin-top: 16.5em;
+    color: white;
+    font-size: 1em;
+    font-family: 'now';
+    padding: 1em;
+    padding-bottom: 0;
+    margin-left: -2.35em;
+    width: 21em;
+    text-align: center;
+  }
+  section.skills .skills-container .html-skill .html-bar-holder {
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    display: block;
+    margin-top: -1em;
+    margin: 2em;
+    margin-left: -1.35em;
+    text-align: center;
+    width: 20em;
+    position: relative;
+  }
+  section.skills .skills-container .html-skill .html-bar-holder .html-bar {
+    background-image: radial-gradient(#30e6f7, #96e2e9);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-animation: load 2s 0s;
+            animation: load 2s 0s;
+    width: calc(90% - 28px);
+    height: 1px;
+    position: absolute;
+    left: 17.5%;
+    margin-left: -3.4em;
+    margin-top: -.15em;
+    z-index: 799;
+  }
+  section.skills .skills-container .html-skill .html-bar-holder h5 {
+    margin-top: .25em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-bottom: 0;
+    font-family: 'now';
+    color: black;
+    font-size: .7em;
+    text-align: center;
+    z-index: 800;
+  }
+  section.skills .skills-container .js-skill {
+    display: block;
+    padding: 3em;
+    position: relative;
+    border: 2px solid var(--bg-color);
+    border-radius: 2em;
+    background: var(--bg-color);
+    width: 18em;
+    height: 28em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+  section.skills .skills-container .js-skill .logo {
+    width: 8em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 18%;
+    border-radius: 1em;
+  }
+  section.skills .skills-container .js-skill h4 {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 39%;
+    font-family: 'righteous';
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  section.skills .skills-container .js-skill .dots {
+    position: absolute;
+    top: 55%;
+    left: 50.5%;
+    margin-left: -1.25em;
+  }
+  section.skills .skills-container .js-skill p {
+    margin-top: 16.5em;
+    color: white;
+    font-size: 1em;
+    font-family: 'now';
+    padding: 1em;
+    padding-bottom: 0;
+    margin-left: -2.35em;
+    width: 21em;
+    text-align: center;
+  }
+  section.skills .skills-container .js-skill .js-bar-holder {
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    display: block;
+    margin-top: -1em;
+    margin: 2em;
+    margin-left: -1.35em;
+    text-align: center;
+    width: 20em;
+    position: relative;
+  }
+  section.skills .skills-container .js-skill .js-bar-holder .js-bar {
+    background-image: radial-gradient(#30e6f7, #96e2e9);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-animation: load 2s 0s;
+            animation: load 2s 0s;
+    width: calc(25% - 28px);
+    height: 1px;
+    position: absolute;
+    left: 17.5%;
+    margin-left: -3.4em;
+    margin-top: -.15em;
+    z-index: 799;
+  }
+  section.skills .skills-container .js-skill .js-bar-holder h5 {
+    margin-top: .25em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-bottom: 0;
+    font-family: 'now';
+    color: black;
+    font-size: .7em;
+    text-align: center;
+    z-index: 800;
+  }
+  section.skills .skills-container .cad-skill {
+    display: block;
+    padding: 3em;
+    position: relative;
+    border: 2px solid var(--bg-color);
+    border-radius: 2em;
+    background: var(--bg-color);
+    width: 18em;
+    height: 34em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 5em;
+  }
+  section.skills .skills-container .cad-skill .logo {
+    width: 25em;
+    position: absolute;
+    left: 66%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 14%;
+  }
+  section.skills .skills-container .cad-skill h4 {
+    position: absolute;
+    width: 10em;
+    left: 50.5%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 32%;
+    font-family: 'righteous';
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  section.skills .skills-container .cad-skill .dots {
+    position: absolute;
+    top: 45%;
+    left: 50.5%;
+    margin-left: -1.25em;
+  }
+  section.skills .skills-container .cad-skill p {
+    margin-top: 16.25em;
+    color: white;
+    font-size: 1em;
+    font-family: 'now';
+    padding: 1em;
+    padding-bottom: 0;
+    margin-left: -2.35em;
+    width: 21em;
+    text-align: center;
+  }
+  section.skills .skills-container .cad-skill .cad-bar-holder {
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    display: block;
+    margin-top: -1em;
+    margin: 2em;
+    margin-left: -1.35em;
+    text-align: center;
+    width: 20em;
+    position: relative;
+  }
+  section.skills .skills-container .cad-skill .cad-bar-holder .cad-bar {
+    background-image: radial-gradient(#30e6f7, #96e2e9);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-animation: load 2s 0s;
+            animation: load 2s 0s;
+    width: calc(50% - 28px);
+    height: 1px;
+    position: absolute;
+    left: 17.5%;
+    margin-left: -3.4em;
+    margin-top: -.15em;
+    z-index: 799;
+  }
+  section.skills .skills-container .cad-skill .cad-bar-holder h5 {
+    margin-top: .25em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-bottom: 0;
+    font-family: 'now';
+    color: black;
+    font-size: .7em;
+    text-align: center;
+    z-index: 800;
+  }
+}
+
+@media only screen and (min-width: 935px) {
+  section.skills {
+    margin: 0;
+    margin-top: -1.5em;
+    padding: 0;
+    background: #333030;
+    text-align: center;
+  }
+  section.skills .skills-header {
+    text-align: center;
+    position: relative;
+    padding-top: 4.5em;
+  }
+  section.skills .skills-header .title {
+    font-family: 'lovelo';
+    color: var(--secondary-color);
+    font-size: 3em;
+    position: relative;
+    margin-top: 1em;
+    opacity: 0;
+    -webkit-animation: fadeIn 1s ease-in;
+            animation: fadeIn 1s ease-in;
+  }
+  section.skills .skills-header .skills-underline {
+    width: 1em;
+    height: 15px;
+    position: absolute;
+    background: var(--primary-color);
+    top: 11.45em;
+    left: 50%;
+    margin-left: -.7em;
+    border-radius: 5em;
+    -webkit-animation: none;
+            animation: none;
+  }
+  section.skills .skills-container {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.skills .skills-container .first-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section.skills .skills-container .first-row .python-skill {
+    display: block;
+    padding: 3em;
+    position: relative;
+    border: 2px solid var(--bg-color);
+    border-radius: 2em;
+    background: var(--bg-color);
+    width: 18em;
+    height: 28em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 3em;
+    margin-top: 2em;
+  }
+  section.skills .skills-container .first-row .python-skill .logo {
+    width: 8em;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  section.skills .skills-container .first-row .python-skill h4 {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 37%;
+    font-family: 'righteous';
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  section.skills .skills-container .first-row .python-skill .dots {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    margin-left: -1.25em;
+  }
+  section.skills .skills-container .first-row .python-skill p {
+    margin-top: 16.35em;
+    color: white;
+    font-size: 1em;
+    font-family: 'now';
+    padding: 1em;
+    padding-bottom: 0;
+    margin-left: -2.35em;
+    width: 21em;
+    text-align: center;
+  }
+  section.skills .skills-container .first-row .python-skill .python-bar-holder {
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    display: block;
+    margin-top: -1em;
+    margin-bottom: 1em;
+    margin: 2em;
+    margin-left: -1.35em;
+    text-align: center;
+    width: 20em;
+    position: relative;
+  }
+  section.skills .skills-container .first-row .python-skill .python-bar-holder .python-bar {
+    background-image: radial-gradient(#30e6f7, #96e2e9);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-animation: load 2s 0s;
+            animation: load 2s 0s;
+    width: calc(65% - 28px);
+    height: 1px;
+    position: absolute;
+    left: 17.5%;
+    margin-left: -3.4em;
+    margin-top: -.15em;
+    margin-bottom: 2em;
+    z-index: 799;
+  }
+  section.skills .skills-container .first-row .python-skill .python-bar-holder h5 {
+    margin-top: .25em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-bottom: 0;
+    font-family: 'now';
+    color: black;
+    font-size: .7em;
+    text-align: center;
+    z-index: 800;
+  }
+  section.skills .skills-container .first-row .css-skill {
+    display: block;
+    padding: 3em;
+    position: relative;
+    border: 2px solid var(--bg-color);
+    border-radius: 2em;
+    background: var(--bg-color);
+    width: 18em;
+    height: 28em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+  section.skills .skills-container .first-row .css-skill .logo {
+    width: 7em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 12%;
+  }
+  section.skills .skills-container .first-row .css-skill h4 {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 39%;
+    font-family: 'righteous';
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  section.skills .skills-container .first-row .css-skill .dots {
+    position: absolute;
+    top: 55%;
+    left: 50.5%;
+    margin-left: -1.25em;
+  }
+  section.skills .skills-container .first-row .css-skill p {
+    margin-top: 16.5em;
+    color: white;
+    font-size: 1em;
+    font-family: 'now';
+    padding: 1em;
+    padding-bottom: 0;
+    margin-left: -2.35em;
+    width: 21em;
+    text-align: center;
+  }
+  section.skills .skills-container .first-row .css-skill .css-bar-holder {
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    display: block;
+    margin-top: -1em;
+    margin: 2em;
+    margin-left: -1.35em;
+    text-align: center;
+    width: 20em;
+    position: relative;
+  }
+  section.skills .skills-container .first-row .css-skill .css-bar-holder .css-bar {
+    background-image: radial-gradient(#30e6f7, #96e2e9);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-animation: load 2s 0s;
+            animation: load 2s 0s;
+    width: calc(80% - 28px);
+    height: 1px;
+    position: absolute;
+    left: 17.5%;
+    margin-left: -3.4em;
+    margin-top: -.15em;
+    z-index: 799;
+  }
+  section.skills .skills-container .first-row .css-skill .css-bar-holder h5 {
+    margin-top: .25em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-bottom: 0;
+    font-family: 'now';
+    color: black;
+    font-size: .7em;
+    text-align: center;
+    z-index: 800;
+  }
+  section.skills .skills-container .second-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section.skills .skills-container .second-row .html-skill {
+    display: block;
+    padding: 3em;
+    position: relative;
+    border: 2px solid var(--bg-color);
+    border-radius: 2em;
+    background: var(--bg-color);
+    width: 18em;
+    height: 28em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 3em;
+    margin-top: 2em;
+  }
+  section.skills .skills-container .second-row .html-skill .logo {
+    width: 8em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 18%;
+  }
+  section.skills .skills-container .second-row .html-skill h4 {
+    position: absolute;
+    left: 50.5%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 39%;
+    font-family: 'righteous';
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  section.skills .skills-container .second-row .html-skill .dots {
+    position: absolute;
+    top: 55%;
+    left: 50.5%;
+    margin-left: -1.25em;
+  }
+  section.skills .skills-container .second-row .html-skill p {
+    margin-top: 16.5em;
+    color: white;
+    font-size: 1em;
+    font-family: 'now';
+    padding: 1em;
+    padding-bottom: 0;
+    margin-left: -2.35em;
+    width: 21em;
+    text-align: center;
+  }
+  section.skills .skills-container .second-row .html-skill .html-bar-holder {
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    display: block;
+    margin-top: -1em;
+    margin: 2em;
+    margin-left: -1.35em;
+    text-align: center;
+    width: 20em;
+    position: relative;
+  }
+  section.skills .skills-container .second-row .html-skill .html-bar-holder .html-bar {
+    background-image: radial-gradient(#30e6f7, #96e2e9);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-animation: load 2s 0s;
+            animation: load 2s 0s;
+    width: calc(90% - 28px);
+    height: 1px;
+    position: absolute;
+    left: 17.5%;
+    margin-left: -3.4em;
+    margin-top: -.15em;
+    z-index: 799;
+  }
+  section.skills .skills-container .second-row .html-skill .html-bar-holder h5 {
+    margin-top: .25em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-bottom: 0;
+    font-family: 'now';
+    color: black;
+    font-size: .7em;
+    text-align: center;
+    z-index: 800;
+  }
+  section.skills .skills-container .second-row .js-skill {
+    display: block;
+    padding: 3em;
+    position: relative;
+    border: 2px solid var(--bg-color);
+    border-radius: 2em;
+    background: var(--bg-color);
+    width: 18em;
+    height: 28em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+  section.skills .skills-container .second-row .js-skill .logo {
+    width: 8em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 18%;
+    border-radius: 1em;
+  }
+  section.skills .skills-container .second-row .js-skill h4 {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 39%;
+    font-family: 'righteous';
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  section.skills .skills-container .second-row .js-skill .dots {
+    position: absolute;
+    top: 55%;
+    left: 50.5%;
+    margin-left: -1.25em;
+  }
+  section.skills .skills-container .second-row .js-skill p {
+    margin-top: 16.5em;
+    color: white;
+    font-size: 1em;
+    font-family: 'now';
+    padding: 1em;
+    padding-bottom: 0;
+    margin-left: -2.35em;
+    width: 21em;
+    text-align: center;
+  }
+  section.skills .skills-container .second-row .js-skill .js-bar-holder {
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    display: block;
+    margin-top: -1em;
+    margin: 2em;
+    margin-left: -1.35em;
+    text-align: center;
+    width: 20em;
+    position: relative;
+  }
+  section.skills .skills-container .second-row .js-skill .js-bar-holder .js-bar {
+    background-image: radial-gradient(#30e6f7, #96e2e9);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-animation: load 2s 0s;
+            animation: load 2s 0s;
+    width: calc(25% - 28px);
+    height: 1px;
+    position: absolute;
+    left: 17.5%;
+    margin-left: -3.4em;
+    margin-top: -.15em;
+    z-index: 799;
+  }
+  section.skills .skills-container .second-row .js-skill .js-bar-holder h5 {
+    margin-top: .25em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-bottom: 0;
+    font-family: 'now';
+    color: black;
+    font-size: .7em;
+    text-align: center;
+    z-index: 800;
+  }
+  section.skills .skills-container .cad-skill {
+    display: block;
+    padding: 3em;
+    position: relative;
+    border: 2px solid var(--bg-color);
+    border-radius: 2em;
+    background: var(--bg-color);
+    width: 18em;
+    height: 34em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 5em;
+  }
+  section.skills .skills-container .cad-skill .logo {
+    width: 25em;
+    position: absolute;
+    left: 66%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 14%;
+  }
+  section.skills .skills-container .cad-skill h4 {
+    position: absolute;
+    width: 10em;
+    left: 50.5%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 32%;
+    font-family: 'righteous';
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  section.skills .skills-container .cad-skill .dots {
+    position: absolute;
+    top: 45%;
+    left: 50.5%;
+    margin-left: -1.25em;
+  }
+  section.skills .skills-container .cad-skill p {
+    margin-top: 16.25em;
+    color: white;
+    font-size: 1em;
+    font-family: 'now';
+    padding: 1em;
+    padding-bottom: 0;
+    margin-left: -2.35em;
+    width: 21em;
+    text-align: center;
+  }
+  section.skills .skills-container .cad-skill .cad-bar-holder {
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    display: block;
+    margin-top: -1em;
+    margin: 2em;
+    margin-left: -1.35em;
+    text-align: center;
+    width: 20em;
+    position: relative;
+  }
+  section.skills .skills-container .cad-skill .cad-bar-holder .cad-bar {
+    background-image: radial-gradient(#30e6f7, #96e2e9);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-animation: load 2s 0s;
+            animation: load 2s 0s;
+    width: calc(50% - 28px);
+    height: 1px;
+    position: absolute;
+    left: 17.5%;
+    margin-left: -3.4em;
+    margin-top: -.15em;
+    z-index: 799;
+  }
+  section.skills .skills-container .cad-skill .cad-bar-holder h5 {
+    margin-top: .25em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-bottom: 0;
+    font-family: 'now';
+    color: black;
+    font-size: .7em;
+    text-align: center;
+    z-index: 800;
+  }
+}
+
+footer {
+  background-color: #333030;
+  height: 350px;
+  margin-top: -2em;
+  z-index: 800;
+}
+
+footer h1 {
+  font-family: 'now';
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary-color);
+  padding: 3.5em 1em 0 1em;
+  font-size: 2em;
+  line-height: 1.6em;
+}
+
+footer h5 {
+  font-size: 0.75em;
+  font-family: 'now';
+  color: white;
+  text-align: center;
+  padding-bottom: 6em;
+}
+
+footer h5 a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1255px) {
+  .hero {
+    height: 90vh;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
+    width: 60em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
