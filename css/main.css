@@ -2088,7 +2088,7 @@ section.interact .details:hover {
   }
   .hero {
     display: block;
-    height: 76vh;
+    height: 90vh;
   }
   .hero .heading {
     font-family: "lovelo";
@@ -2315,7 +2315,7 @@ section.interact .details:hover {
   }
   .hero {
     display: block;
-    height: 76vh;
+    height: 98vh;
   }
   .hero .heading {
     font-family: "lovelo";
@@ -2383,7 +2383,7 @@ section.interact .details:hover {
   }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 200px) {
   section.skills {
     margin: 0;
     margin-top: -1.5em;
@@ -2887,6 +2887,13 @@ section.interact .details:hover {
     font-size: .7em;
     text-align: center;
     z-index: 800;
+  }
+  .hero .container .typing {
+    width: 18em;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
