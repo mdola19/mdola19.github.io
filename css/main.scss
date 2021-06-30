@@ -575,29 +575,27 @@
     }
 }
 
-.python-popup {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
+.popups-projects {
 
-    .bg-modal {
+    .bg-tint {
         width: 100%;
-        height: 1230px;
+        height: 1300px;
         background-color: black;
         opacity: 70%;
         position: absolute;
         top: 0;
         z-index: 998;
+        display: none;
     }
 
-    .py-popup {
-
-        width: 425px;
-        height: 800px;
+    .pop {
+        width: 400px;
+        height: 750px;
         background-color: rgba(255, 255, 255, 1);
         position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         top: 3em;
         z-index: 999;
         border-radius: 1em;
@@ -606,897 +604,204 @@
 
         .close {
             position: absolute;
-            top: 0;
+            top: 14px;
             font-size: 45px;
+            width: .8em;
             right: 14px;
             font-weight: bold;
-            transform: rotate(45deg);
             cursor: pointer;
-        }
-
-        .page-indicators {
-            display: flex;
-            position: absolute;
-            left: 50%;
-            margin-left: -1em;
-            top: 2%;
-            
-            .py-indicator {
-                height: 8px;
-                width: 8px;
-                background-color: black;
-                border-radius: 50%;
-                display: inline-block;
-                margin-right: .35em;
-            }
-
-            .opencv-indicator {
-                height: 8px;
-                width: 8px;
-                background-color: black;
-                border-radius: 50%;
-                display: inline-block;
-                margin-right: .3em;
-                opacity: .2;
-            }
-
-            .numpy-indicator {
-                height: 8px;
-                width: 8px;
-                background-color: black;
-                border-radius: 50%;
-                display: inline-block;
-                opacity: .2;
-            }
         }
 
         h1 {
-            color: var(--primary-color);
             font-family: 'righteous';
-            font-size: 2.5em;
-            text-align: center;
-            text-decoration: underline;
-            margin-top: 1.5em;
             text-transform: uppercase;
-        }
-
-
-        .python-project {
-
-            position: relative;
-            margin-top: 1em;
-            display: block;
-
-            img {
-                width: 23em;
-                height: 15.5em;
-                position: absolute;
-                left: 50%;
-                margin-left: -11.6em;
-                border: 2px solid black;
-                border-radius: 1em;
-            }
-
-            .arrow {
-                width: 2.5em;
-                position: absolute;
-                top: 10.5em;
-                margin-left: 10.25em;
-                z-index: 995;
-                border: 0px;
-            
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-
-            h3 {
-                font-family: 'lovelo';
-                font-size: 1.2em;
-                margin-top: 1.3em;
-                padding-top: 14.5em;
-                color: black;
-                margin-bottom: 0;
-                text-align: center;
-            }
-
-            p {
-                margin-top: 1em;
-                width: 25em;
-                font-family: 'now';
-                color: black;
-                font-size: 85%;
-                line-height: 1.5em;
-                padding: 2em;
-                padding-top: .75em;
-                text-indent: 2em;
-                margin-left: 1em;
-            }
-
-            .code {
-                position: absolute;
-                top: 96%;
-                left: 33%;
-                padding: .8em;
-                background: var(--secondary-color);
-                border-radius: 1em;
-                border: 2px solid var(--secondary-color);
-                font-family: 'lovelo';
-                cursor: pointer;
-            }
-
-        }
-
-        .open-cv {
-
-            position: relative;
-            margin-top: 1em;
-            display: none;
-
-            img {
-                width: 23em;
-                position: absolute;
-                left: 50%;
-                margin-left: -11.6em;
-                border-radius: 1em; 
-            }
-
-            .back-arrow {
-                width: 2.5em;
-                position: absolute;
-                top: 16.63em;
-                margin-left: -12.8em;
-                transform: rotate(180deg);
-                z-index: 995;
-                
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-
-            .arrow2 {
-                width: 2.5em;
-                position: absolute;
-                top: 43.5%;
-                margin-left: 10.25em;
-                z-index: 995;
-                border: 0px;
-            
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-
-            h3 {
-                font-family: 'lovelo';
-                font-size: 1.2em;
-                margin-top: 1.3em;
-                padding-top: 14.5em;
-                color: black;
-                margin-bottom: 0;
-                text-align: center;
-            }
-
-            p {
-                margin-top: 1em;
-                width: 25em;
-                font-family: 'now';
-                color: black;
-                font-size: 85%;
-                line-height: 1.5em;
-                padding: 2em;
-                padding-top: .75em;
-                text-indent: 2em;
-                margin-left: 1em;
-            }
-
-            .code {
-                position: absolute;
-                top: 98%;
-                left: 33%;
-                padding: .8em;
-                background: var(--secondary-color);
-                border-radius: 1em;
-                border: 2px solid var(--secondary-color);
-                font-family: 'lovelo';
-                cursor: pointer;
-            }
-
-        }
-
-        .numpy {
-
-            position: relative;
-            margin-top: 1em;
-            display: none;
-
-            img {
-                width: 23em;
-                position: absolute;
-                left: 50%;
-                margin-left: -11.6em;
-                border-radius: 1em; 
-            }
-
-            .back-arrow2 {
-                width: 2.5em;
-                position: absolute;
-                top: 42.5%;
-                margin-left: -12.8em;
-                transform: rotate(180deg);
-                z-index: 995;
-                
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-
-            h3 {
-                font-family: 'lovelo';
-                font-size: 1.2em;
-                margin-top: 1.3em;
-                padding-top: 14.5em;
-                color: black;
-                margin-bottom: 0;
-                text-align: center;
-            }
-
-            p {
-                margin-top: 1em;
-                width: 25em;
-                font-family: 'now';
-                color: black;
-                font-size: 85%;
-                line-height: 1.5em;
-                padding: 2em;
-                padding-top: .75em;
-                text-indent: 2em;
-                margin-left: 1em;
-            }
-
-            .code {
-                position: absolute;
-                top: 96.5%;
-                left: 33%;
-                padding: .8em;
-                background: var(--secondary-color);
-                border-radius: 1em;
-                border: 2px solid var(--secondary-color);
-                font-family: 'lovelo';
-                cursor: pointer;
-            }
+            text-align: center;
+            color: var(--primary-color);
+            margin-top: 1.5em;
         }
     }
-}
 
-.java-popup {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-
-    .bg-modal {
-        width: 100%;
-        height: 1230px;
-        background-color: black;
-        opacity: 70%;
-        position: absolute;
-        top: 0;
-        z-index: 998;
-    }
-
-    .popup {
-
-        width: 425px;
-        height: 800px;
-        background-color: rgba(255, 255, 255, 1);
-        position: absolute;
-        top: 3em;
-        z-index: 999;
-        border-radius: 1em;
-        text-transform: uppercase;
-        opacity: 1;
-        animation: fadeIn 1s ease-in;
-        
-        .close {
-            position: absolute;
-            top: 0;
-            font-size: 45px;
-            right: 14px;
-            font-weight: bold;
-            transform: rotate(45deg);
-            cursor: pointer;
-        }
+    .formatting {
 
         img {
-            width: 21em;
-            height: 18em;
+            width: 18em;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             border-radius: 1em;
-            position: absolute;
-            top: 28%;
-            left: 10%;
-        }
-    }
-}
-
-.fed-popup {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-
-    .bg-modal {
-        width: 100%;
-        height: 1230px;
-        background-color: black;
-        opacity: 70%;
-        position: absolute;
-        top: 0;
-        z-index: 998;
-    }
-
-    .popup {
-
-        width: 425px;
-        height: 810px;
-        background-color: rgba(255, 255, 255, 1);
-        position: absolute;
-        top: 3em;
-        z-index: 999;
-        border-radius: 1em;
-        opacity: 1;
-        animation: fadeIn 1s ease-in;
-
-
-        .close {
-            position: absolute;
-            top: 0;
-            font-size: 45px;
-            right: 14px;
-            font-weight: bold;
-            transform: rotate(45deg);
-            cursor: pointer;
         }
 
-        h1 {
-            color: var(--primary-color);
-            font-family: 'righteous';
-            font-size: 2.5em;
+        h3 {
             text-align: center;
-            text-decoration: underline;
-            margin-top: 1.5em;
-            text-transform: uppercase;
-        }
-
-        .portfolio {
-
-            position: relative;
-            margin-top: 1em;
             display: block;
-
-            img {
-                width: 23em;
-                position: absolute;
-                left: 50%;
-                margin-left: -11.6em;
-                border-radius: 1em; 
-            }
-
-            h3 {
-                font-family: 'lovelo';
-                font-size: 1.2em;
-                margin-top: 1.3em;
-                padding-top: 14.5em;
-                color: black;
-                margin-bottom: 0;
-                text-align: center;
-            }
-
-            p {
-                margin-top: .5em;
-                width: 26em;
-                font-family: 'now';
-                color: black;
-                font-size: 85%;
-                line-height: 1.5em;
-                padding: 2em;
-                padding-top: .75em;
-                text-indent: 2em;
-                margin-left: 1em;
-                margin-left: 1em;
-                margin-bottom: 1em;
-            }
-        }
-    }
-}
-
-.cad-popup {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-
-    .bg-modal {
-        width: 100%;
-        height: 1230px;
-        background-color: black;
-        opacity: 70%;
-        position: absolute;
-        top: 0;
-        z-index: 998;
-    }
-
-    .popup {
-
-        width: 425px;
-        height: 800px;
-        background-color: rgba(255, 255, 255, 1);
-        position: absolute;
-        top: 3em;
-        z-index: 999;
-        border-radius: 1em;
-        border-radius: 1em;
-        opacity: 1;
-        animation: fadeIn 1s ease-in;
-
-        .close {
-            position: absolute;
-            top: 0;
-            font-size: 45px;
-            right: 14px;
-            font-weight: bold;
-            transform: rotate(45deg);
-            cursor: pointer;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'now';
+            font-weight: 900;
+            font-size: 1.4em;
+            width: 12.5em;
         }
 
-        h1 {
-            color: var(--primary-color);
-            font-family: 'righteous';
-            font-size: 2.25em;
+        p {
+            font-family: 'now';
+            font-size: 1em;
+            width: 22em;
+            display: block;
+            margin-left: 2em;
+            margin-right: auto;
+            line-height: 24px;
+        }
+
+        button {
+            border-radius: 1em;
+            background-color: var(--secondary-color);
+            font-family: 'lovelo';
+            font-size: 1.2em;
+            padding: .7em;
+            width: 8em;
+            border: var(--secondary-color);
             text-align: center;
-            text-decoration: underline;
-            margin-top: 1.5em;
-            text-transform: uppercase;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
-        .telescope-mount {
-            position: relative;
-            margin-top: 1em;
-            display: block;
+        .right-arrow {
+            position: absolute;
+            top: 45%;
+            left: 80%;
+            width: 5em;
+            transform: rotate(180deg);
+        }
 
-            img {
-                width: 23em;
+        .left-arrow {
+            position: absolute;
+            top: 45%;
+            width: 5em;
+        }
+    }
+
+    .software-pops {
+
+        .python-popup {
+
+            display: none;
+            
+            .python-project {
+
+                display: block;
+                animation: fadeIn 1s ease-in;
+
+                .python-project-img {
+                    margin-top: -.5em;
+                    border: 2px solid black;
+                }
+                
+                p {
+                    margin-top: -1em;
+                }
+
+                button {
+                    margin-top: -.25em;
+                }
+            }
+
+            .opencv-project {
+                display: none;
+                animation: fadeIn 1s ease-in;
+
+                .right-arrow {
+                    top: 40%;
+                }
+        
+                .left-arrow {
+                    top: 40%;
+                }
+            }
+
+            .numpy-project {
+                display: none;
+                animation: fadeIn 1s ease-in;
+
+                .left-arrow {
+                    top: 41%;
+                }
+            }
+        }
+
+        .fed-popup {
+            display: none;
+        }
+
+        .java-popup {
+
+            display: none;
+
+            .soon {
                 position: absolute;
+                top: 35%;
                 left: 50%;
-                margin-left: -11.6em;
-                border-radius: 1em; 
-            }
-
-            h3 {
-                font-family: 'lovelo';
-                font-size: 1.2em;
-                margin-top: 1.3em;
-                padding-top: 15em;
-                color: black;
-                margin-bottom: 0;
-                text-align: center;
-            }
-
-            p {
-                margin-top: 0em;
-                width: 26em;
-                font-family: 'now';
-                color: black;
-                font-size: 85%;
-                line-height: 1.5em;
-                padding: 2em;
-                padding-top: 1em;
-                text-indent: 2em;
-                margin-left: 1em;
-                margin-bottom: 1em;
-            }
-
-            .file {
-                position: absolute;
-                top: 98%;
-                left: 33%;
-                padding: .8em;
-                background: var(--secondary-color);
-                border-radius: 1em;
-                border: 2px solid var(--secondary-color);
-                font-family: 'lovelo';
-                cursor: pointer;
+                height: 15em;
+                transform: translateX(-50%);
             }
         }
     }
-}
 
-.arduino-popup {
+    .design-pops {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-
-    .bg-modal {
-        width: 100%;
-        height: 1230px;
-        background-color: black;
-        opacity: 70%;
-        position: absolute;
-        top: 0;
-        z-index: 998;
+        .cad-popup {
+            display: none;
+        }
     }
 
-    .popup {
+    .hardware-pops {
 
-        width: 425px;
-        height: 800px;
-        background-color: rgba(255, 255, 255, 1);
-        position: absolute;
-        top: 3em;
-        z-index: 999;
-        border-radius: 1em;
-        opacity: 1;
-        animation: fadeIn 1s ease-in;
-
-        .close {
-            position: absolute;
-            top: 0;
-            font-size: 45px;
-            right: 14px;
-            font-weight: bold;
-            transform: rotate(45deg);
-            cursor: pointer;
-        }
-
-        .arduino-page-indicators {
-            display: flex;
-            position: absolute;
-            left: 49%;
-            margin-left: -1em;
-            top: 2%;
-            
-            .led-inidicator {
-                height: 8px;
-                width: 8px;
-                background-color: black;
-                border-radius: 50%;
-                display: inline-block;
-                margin-right: .35em;
-            }
-
-            .snake-game-indicator {
-                height: 8px;
-                width: 8px;
-                background-color: black;
-                border-radius: 50%;
-                display: inline-block;
-                margin-right: .3em;
-                opacity: .2;
-            }
-
-            .digital-hourglass-indicator {
-                height: 8px;
-                width: 8px;
-                background-color: black;
-                border-radius: 50%;
-                display: inline-block;
-                opacity: .2;
-                margin-right: .3em;
-            }
-
-            .smart-bin-indicator {
-                height: 8px;
-                width: 8px;
-                background-color: black;
-                border-radius: 50%;
-                display: inline-block;
-                opacity: .2;
-            }
-        }
-
-        h1 {
-            color: var(--primary-color);
-            font-family: 'righteous';
-            font-size: 2.5em;
-            text-align: center;
-            text-decoration: underline;
-            margin-top: 1.5em;
-            text-transform: uppercase;
-        }
-
-        .lamp {
-
-            position: relative;
-            margin-top: 1em;
-            display: block;
-            opacity: 1;
-            animation: fadeIn 1s ease-in;
-
-            img {
-                width: 23em;
-                position: absolute;
-                left: 50%;
-                margin-left: -11.6em;
-                border-radius: 1em; 
-            }
-
-            .arduino-arrow {
-                width: 2.5em;
-                position: absolute;
-                top: 17.25em;
-                margin-left: 10.25em;
-                z-index: 995;
-                border: 0px;
-            
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-
-            h3 {
-                font-family: 'lovelo';
-                font-size: 1.2em;
-                margin-top: 1.3em;
-                padding-top: 15em;
-                color: black;
-                margin-bottom: 0;
-                text-align: center;
-            }
-
-            p {
-                margin-top: 0em;
-                width: 26em;
-                font-family: 'now';
-                color: black;
-                font-size: 85%;
-                line-height: 1.5em;
-                padding: 2em;
-                padding-top: 1em;
-                text-indent: 2em;
-                margin-left: 1em;
-                margin-bottom: 1em;
-            }
-
-            .files {
-                position: absolute;
-                top: 99%;
-                left: 33%;
-                padding: .8em;
-                background: var(--secondary-color);
-                border-radius: 1em;
-                border: 2px solid var(--secondary-color);
-                font-family: 'lovelo';
-                cursor: pointer;
-            }
-
-        }
-
-        .snake-game {
-
-            position: relative;
-            margin-top: 1em;
+        .arduino-popup{
             display: none;
-            opacity: 1;
-            animation: fadeIn 1s ease-in;
 
-            img {
-                width: 23em;
-                position: absolute;
-                left: 50%;
-                margin-left: -11.6em;
-                border-radius: 1em; 
-            }
-
-            .arduino-arrow2 {
-                width: 2.5em;
-                position: absolute;
-                top: 47%;
-                margin-left: 10.25em;
-                z-index: 995;
-                border: 0px;
-            
-                &:hover {
-                    cursor: pointer;
+            .led-project {
+                .right-arrow {
+                    top: 41%;
                 }
             }
 
-            .arduino-back-arrow {
-                width: 2.5em;
-                position: absolute;
-                top: 47%;
-                margin-left: -12.8em;
-                transform: rotate(180deg);
-                z-index: 995;
-                
-                &:hover {
-                    cursor: pointer;
+            .snake-game {
+                display: none;
+                animation: fadeIn 1s ease-in;
+
+                .right-arrow {
+                    top: 42.5%;
+                }
+        
+                .left-arrow {
+                    top: 42.5%;
                 }
             }
 
-            h3 {
-                font-family: 'lovelo';
-                font-size: 1.2em;
-                margin-top: 1.3em;
-                padding-top: 15.5em;
-                color: black;
-                margin-bottom: 0;
-                text-align: center;
-            }
+            .hourglass-project {
+                display: none;
+                animation: fadeIn 1s ease-in;
 
-            p {
-                margin-top: 0em;
-                width: 26em;
-                font-family: 'now';
-                color: black;
-                font-size: 85%;
-                line-height: 1.5em;
-                padding: 2em;
-                padding-top: 1em;
-                text-indent: 2em;
-                margin-left: 1em;
-                margin-bottom: 1em;
-            }
-
-            .files {
-                position: absolute;
-                top: 97%;
-                left: 33%;
-                padding: .8em;
-                background: var(--secondary-color);
-                border-radius: 1em;
-                border: 2px solid var(--secondary-color);
-                font-family: 'lovelo';
-                cursor: pointer;
-            }
-        }
-
-        .hourglass {
-
-            position: relative;
-            margin-top: 1em;
-            display: none;
-            opacity: 1;
-            animation: fadeIn 1s ease-in;
-
-            img {
-                width: 23em;
-                position: absolute;
-                left: 50%;
-                margin-left: -11.6em;
-                border-radius: 1em; 
-            }
-
-            .arduino-arrow3 {
-                width: 2.5em;
-                position: absolute;
-                top: 48%;
-                margin-left: 10.25em;
-                z-index: 995;
-                border: 0px;
-            
-                &:hover {
-                    cursor: pointer;
+                .right-arrow {
+                    top: 42.5%;
+                }
+        
+                .left-arrow {
+                    top: 42.5%;
                 }
             }
 
-            .arduino-back-arrow2 {
-                width: 2.5em;
-                position: absolute;
-                top: 48%;
-                margin-left: -12.8em;
-                transform: rotate(180deg);
-                z-index: 995;
-                
-                &:hover {
-                    cursor: pointer;
+            .smartbin-project {
+                display: none;
+                animation: fadeIn 1s ease-in;
+
+                .left-arrow {
+                    top: 39.5%;
                 }
-            }
-
-            h3 {
-                font-family: 'lovelo';
-                font-size: 1.2em;
-                margin-top: 1.3em;
-                padding-top: 15.5em;
-                color: black;
-                margin-bottom: 0;
-                text-align: center;
-            }
-
-            p {
-                margin-top: 0em;
-                width: 27em;
-                font-family: 'now';
-                color: black;
-                font-size: 85%;
-                line-height: 1.5em;
-                padding: 2em;
-                padding-top: 1em;
-                text-indent: 2em;
-                margin-left: 1em;
-                margin-bottom: 1em;
-            }
-
-            .files {
-                position: absolute;
-                top: 99%;
-                left: 33%;
-                padding: .8em;
-                background: var(--secondary-color);
-                border-radius: 1em;
-                border: 2px solid var(--secondary-color);
-                font-family: 'lovelo';
-                cursor: pointer;
-            }
-        }
-
-        .smartbin {
-
-            position: relative;
-            margin-top: 1em;
-            display: none;
-            opacity: 1;
-            animation: fadeIn 1s ease-in;
-
-            img {
-                width: 23em;
-                position: absolute;
-                left: 50%;
-                margin-left: -11.6em;
-                border-radius: 1em; 
-            }
-
-            .arduino-back-arrow3 {
-                width: 2.5em;
-                position: absolute;
-                top: 45%;
-                margin-left: -12.8em;
-                transform: rotate(180deg);
-                z-index: 995;
-                
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-
-            h3 {
-                font-family: 'lovelo';
-                font-size: 1.2em;
-                margin-top: 1.3em;
-                padding-top: 14em;
-                color: black;
-                margin-bottom: 0;
-                text-align: center;
-            }
-
-            p {
-                margin-top: 0em;
-                width: 27em;
-                font-family: 'now';
-                color: black;
-                font-size: 85%;
-                line-height: 1.5em;
-                padding: 2em;
-                padding-top: 1em;
-                text-indent: 2em;
-                margin-left: 1em;
-                margin-bottom: 1em;
-            }
-
-            .files {
-                position: absolute;
-                top: 99%;
-                left: 33%;
-                padding: .8em;
-                background: var(--secondary-color);
-                border-radius: 1em;
-                border: 2px solid var(--secondary-color);
-                font-family: 'lovelo';
-                cursor: pointer;
             }
         }
     }
@@ -1666,29 +971,26 @@ section.interact {
     } 
 }
 
-.robotics-popup {
+.popups-experience {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-
-    .bg-modal {
+    .bg-tint {
         width: 100%;
-        height: 1230px;
+        height: 1300px;
         background-color: black;
         opacity: 70%;
         position: absolute;
         top: 0;
         z-index: 998;
+        display: none;
     }
 
-    .popup {
-
-        width: 425px;
+    .pop {
+        width: 400px;
         height: 800px;
         background-color: rgba(255, 255, 255, 1);
         position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         top: 3em;
         z-index: 999;
         border-radius: 1em;
@@ -1697,245 +999,64 @@ section.interact {
 
         .close {
             position: absolute;
-            top: 0;
+            top: 14px;
             font-size: 45px;
+            width: .8em;
             right: 14px;
             font-weight: bold;
-            transform: rotate(45deg);
             cursor: pointer;
         }
+    }
 
+    .formatting {
         h1 {
-            color: var(--primary-color);
             font-family: 'righteous';
-            font-size: 2.5em;
-            text-align: center;
-            text-decoration: underline;
-            margin-top: 1.5em;
             text-transform: uppercase;
-        }
-
-        .allspark-nine {
-            position: relative;
-            margin-top: 1em;
-            display: block;
-
-            img {
-                width: 16.5em;
-                position: absolute;
-                left: 62%;
-                margin-left: -11.6em;
-                border-radius: 50%; 
-            }
-
-            h3 {
-                font-family: 'lovelo';
-                font-size: 1.2em;
-                margin-top: 1.3em;
-                width: 18em;
-                padding-top: 13.4em;
-                color: black;
-                margin-bottom: 0;
-                position: absolute;
-                left: 50%;
-                margin-left: -9em;
-                text-align: center;
-            }
-
-            p {
-                margin-top: 0em;
-                width: 26em;
-                font-family: 'now';
-                color: black;
-                font-size: 85%;
-                line-height: 1.5em;
-                padding: 2em;
-                position: absolute;
-                top: 23em;
-                text-indent: 2em;
-                margin-left: .8em;
-                margin-bottom: 1em;
-            }
-        }
-    }
-}
-
-.cadets-popup {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-
-    .bg-modal {
-        width: 100%;
-        height: 1230px;
-        background-color: black;
-        opacity: 70%;
-        position: absolute;
-        top: 0;
-        z-index: 998;
-    }
-
-    .popup {
-
-        width: 425px;
-        height: 800px;
-        background-color: rgba(255, 255, 255, 1);
-        position: absolute;
-        top: 3em;
-        z-index: 999;
-        border-radius: 1em;
-        opacity: 1;
-        animation: fadeIn 1s ease-in;
-
-        .close {
-            position: absolute;
-            top: 0;
-            font-size: 45px;
-            right: 14px;
-            font-weight: bold;
-            transform: rotate(45deg);
-            cursor: pointer;
-        }
-
-        h1 {
+            text-align: center;
             color: var(--primary-color);
-            font-family: 'righteous';
-            font-size: 2.5em;
-            text-align: center;
-            text-decoration: underline;
             margin-top: 1.5em;
-            text-transform: uppercase;
         }
 
-        .cadets {
-            position: relative;
-            margin-top: 1em;
+        img {
+            width: 18em;
             display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 1em;
+        }
 
-            img {
-                width: 16.5em;
-                position: absolute;
-                left: 62%;
-                margin-left: -11.6em;
-                border-radius: 50%; 
-            }
+        h3 {
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'now';
+            font-weight: 900;
+            font-size: 1.4em;
+            width: 12.5em;
+        }
 
-            h3 {
-                font-family: 'lovelo';
-                font-size: 1.2em;
-                margin-top: 1.3em;
-                padding-top: 15em;
-                color: black;
-                margin-bottom: 0;
-                text-align: center;
-            }
-
-            p {
-                margin-top: 0em;
-                width: 26em;
-                font-family: 'now';
-                color: black;
-                font-size: 85%;
-                line-height: 1.5em;
-                padding: 2em;
-                padding-top: 1em;
-                text-indent: 2em;
-                margin-left: .8em;
-                margin-bottom: 1em;
-            }
+        p {
+            font-family: 'now';
+            font-size: 1em;
+            width: 22em;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 24px;
         }
     }
-}
 
-
-.interact-popup {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-
-    .bg-modal {
-        width: 100%;
-        height: 1230px;
-        background-color: black;
-        opacity: 70%;
-        position: absolute;
-        top: 0;
-        z-index: 998;
+    .robotics-popup {
+        display: none;
     }
 
-    .popup {
+    .cadets-popup {
+        display: none;
+    }
 
-        width: 425px;
-        height: 800px;
-        background-color: rgba(255, 255, 255, 1);
-        position: absolute;
-        top: 3em;
-        z-index: 999;
-        border-radius: 1em;
-        opacity: 1;
-        animation: fadeIn 1s ease-in;
-
-        .close {
-            position: absolute;
-            top: 0;
-            font-size: 45px;
-            right: 14px;
-            font-weight: bold;
-            transform: rotate(45deg);
-            cursor: pointer;
-        }
-
-        h1 {
-            color: var(--primary-color);
-            font-family: 'righteous';
-            font-size: 2.5em;
-            text-align: center;
-            text-decoration: underline;
-            margin-top: 1.5em;
-            text-transform: uppercase;
-        }
-
-        .interact {
-            position: relative;
-            margin-top: 1em;
-            display: block;
-
-            img {
-                width: 16.5em;
-                position: absolute;
-                left: 62%;
-                margin-left: -11.6em;
-                border-radius: 50%; 
-            }
-
-            h3 {
-                font-family: 'lovelo';
-                font-size: 1.2em;
-                margin-top: 1.3em;
-                padding-top: 15em;
-                color: black;
-                margin-bottom: 0;
-                text-align: center;
-            }
-
-            p {
-                margin-top: 0em;
-                width: 26em;
-                font-family: 'now';
-                color: black;
-                font-size: 85%;
-                line-height: 1.5em;
-                padding: 2em;
-                padding-top: 1em;
-                text-indent: 2em;
-                margin-left: 1em;
-                margin-bottom: .8em;
-            }
-        }
+    .interact-popup {
+        display: none;
     }
 }
 
@@ -3440,7 +2561,7 @@ footer {
     }
 }
 
-@media only screen and (width: 428px) {
+@media only screen and (max-width: 429px) {
     .contact-section {
         .container {
             .form {

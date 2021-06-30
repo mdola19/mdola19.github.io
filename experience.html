@@ -63,73 +63,52 @@
 
     </section>
 
-    <div class="robotics-popup">
+    <div class="popups-experience">
 
-        <div class="bg-modal">
-        </div>
+        <div class="bg-tint fadeIn"></div>
 
-        <div class="popup">
+        <div class="robotics-popup pop formatting">
 
-            <div id="robotics-close" class="close">+</div>
+            <img class='close' id="robotics-x" src="images/x.svg" alt="">
 
             <h1>Allspark 9</h1>
 
-            <div class="allspark-nine">
-            
-                <img src="images/allspark9.jpg" alt="telescope">
+            <img src="images/allspark9.jpg" alt="">
 
-                <h3>Innovation Technical Subteam Member</h3>
+            <h3>Innovation Technical Subteam Member</h3>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi sed, illo quisquam officiis nobis eum tenetur sit dolore numquam delectus cum debitis, totam soluta, animi culpa illum placeat dolores facilis perspiciatis vitae molestias quos quas ea nostrum? Cumque delectus odio nostrum eaque, perferendis laborum tempore aliquid saepe dicta aspernatur ullam corrupti vitae dolorum culpa excepturi commodi maxime asperiores, hic eos fuga. Debitis doloribus non, minus, unde quisquam corrupti veritatis reprehenderit ratione eaque delectus atque, voluptates blanditiis asperiores ducimus omnis explicabo dolores placeat sunt. Soluta debitis optio pariatur necessitatibus corrupti aliquam rem, libero labore inventore porro ipsa dicta fugiat ad fugit!</p>
-            </div>
-        </div>
-        
-    </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita adipisci, porro eos asperiores illo ab ea iure illum iste laborum at quod modi ex. Natus totam non tempora cum, molestias sunt sed quaerat. Doloribus quos facilis corrupti! Nisi temporibus vitae harum asperiores quis alias quod qui fugiat et, nihil rem? Sapiente nisi libero deserunt, inventore fugit dolorem nulla tenetur. Facilis rem quisquam ut magni ipsum, consequatur a provident cum tempore?</p>
 
-    <div class="cadets-popup">
-
-        <div class="bg-modal">
         </div>
 
-        <div class="popup">
+        <div class="cadets-popup pop formatting">
 
-            <div id="cadets-close" class="close">+</div>
+            <img id="cadets-x" class='close' src="images/x.svg" alt="">
 
             <h1>132 Spitfire</h1>
 
-            <div class="cadets">
-            
-                <img src="images/cadets.png" alt="telescope">
+            <img src="images/cadets.png" alt="">
 
-                <h3>Flight Corporal</h3>
+            <h3>Sergeant</h3>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi sed, illo quisquam officiis nobis eum tenetur sit dolore numquam delectus cum debitis, totam soluta, animi culpa illum placeat dolores facilis perspiciatis vitae molestias quos quas ea nostrum? Cumque delectus odio nostrum eaque, perferendis laborum tempore aliquid saepe dicta aspernatur ullam corrupti vitae dolorum culpa excepturi commodi maxime asperiores, hic eos fuga. Debitis doloribus non, minus, unde quisquam corrupti veritatis reprehenderit ratione eaque delectus atque, voluptates blanditiis asperiores ducimus omnis explicabo dolores placeat sunt. Soluta debitis optio pariatur necessitatibus corrupti aliquam rem, libero labore inventore porro ipsa dicta fugiat ad fugit!</p>
-            </div>
-        </div>
-        
-    </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita adipisci, porro eos asperiores illo ab ea iure illum iste laborum at quod modi ex. Natus totam non tempora cum, molestias sunt sed quaerat. Doloribus quos facilis corrupti! Nisi temporibus vitae harum asperiores quis alias quod qui fugiat et, nihil rem? Sapiente nisi libero deserunt, inventore fugit dolorem nulla tenetur. Facilis rem quisquam ut magni ipsum, consequatur a provident cum tempore?</p>
 
-    <div class="interact-popup">
-
-        <div class="bg-modal">
         </div>
 
-        <div class="popup">
+        <div class="interact-popup pop formatting">
 
-            <div id="interact-close" class="close">+</div>
+            <img id="interact-x" class='close' src="images/x.svg" alt="">
 
             <h1>CPSS Interact</h1>
 
-            <div class="interact">
-            
-                <img src="images/interact-logo.jpg" alt="telescope">
+            <img src="images/interact-logo.jpg" alt="">
 
-                <h3>General Member</h3>
+            <h3>General Member</h3>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi sed, illo quisquam officiis nobis eum tenetur sit dolore numquam delectus cum debitis, totam soluta, animi culpa illum placeat dolores facilis perspiciatis vitae molestias quos quas ea nostrum? Cumque delectus odio nostrum eaque, perferendis laborum tempore aliquid saepe dicta aspernatur ullam corrupti vitae dolorum culpa excepturi commodi maxime asperiores, hic eos fuga. Debitis doloribus non, minus, unde quisquam corrupti veritatis reprehenderit ratione eaque delectus atque, voluptates blanditiis asperiores ducimus omnis explicabo dolores placeat sunt. Soluta debitis optio pariatur necessitatibus corrupti aliquam rem, libero labore inventore porro ipsa dicta fugiat ad fugit!</p>
-            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita adipisci, porro eos asperiores illo ab ea iure illum iste laborum at quod modi ex. Natus totam non tempora cum, molestias sunt sed quaerat. Doloribus quos facilis corrupti! Nisi temporibus vitae harum asperiores quis alias quod qui fugiat et, nihil rem? Sapiente nisi libero deserunt, inventore fugit dolorem nulla tenetur. Facilis rem quisquam ut magni ipsum, consequatur a provident cum tempore?</p>
+
         </div>
-        
+
     </div>
 
     <footer> 
@@ -148,33 +127,40 @@
 
     document.getElementById('robotics-details').addEventListener('click', 
         function() {
-            document.querySelector('.robotics-popup').style.display = 'flex';
+            document.querySelector('.robotics-popup').style.display = 'block';
+            document.querySelector('.bg-tint').style.display = 'block'
     });
 
-    document.getElementById('robotics-close').addEventListener('click', 
+    document.getElementById('robotics-x').addEventListener('click', 
         function(){
             document.querySelector('.robotics-popup').style.display = 'none';
+            document.querySelector('.bg-tint').style.display = 'none';
     });
 
     document.getElementById('cadets-details').addEventListener('click', 
         function() {
-            document.querySelector('.cadets-popup').style.display = 'flex';
+            document.querySelector('.cadets-popup').style.display = 'block';
+            document.querySelector('.bg-tint').style.display = 'block'
     });
 
-    document.getElementById('cadets-close').addEventListener('click', 
+    document.getElementById('cadets-x').addEventListener('click', 
         function(){
             document.querySelector('.cadets-popup').style.display = 'none';
-    });
-    
-    document.getElementById('interact-details').addEventListener('click', 
-        function() {
-            document.querySelector('.interact-popup').style.display = 'flex';
+            document.querySelector('.bg-tint').style.display = 'none';
     });
 
-    document.getElementById('interact-close').addEventListener('click', 
+    document.getElementById('interact-details').addEventListener('click', 
+        function() {
+            document.querySelector('.interact-popup').style.display = 'block';
+            document.querySelector('.bg-tint').style.display = 'block'
+    });
+
+    document.getElementById('interact-x').addEventListener('click', 
         function(){
             document.querySelector('.interact-popup').style.display = 'none';
+            document.querySelector('.bg-tint').style.display = 'none';
     });
+
 
     </script>
 

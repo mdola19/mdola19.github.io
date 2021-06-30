@@ -642,34 +642,25 @@
   }
 }
 
-.python-popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
-}
-
-.python-popup .bg-modal {
+.popups-projects .bg-tint {
   width: 100%;
-  height: 1230px;
+  height: 1300px;
   background-color: black;
   opacity: 70%;
   position: absolute;
   top: 0;
   z-index: 998;
+  display: none;
 }
 
-.python-popup .py-popup {
-  width: 425px;
-  height: 800px;
+.popups-projects .pop {
+  width: 400px;
+  height: 750px;
   background-color: white;
   position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 3em;
   z-index: 999;
   border-radius: 1em;
@@ -678,925 +669,198 @@
           animation: fadeIn 1s ease-in;
 }
 
-.python-popup .py-popup .close {
+.popups-projects .pop .close {
   position: absolute;
-  top: 0;
+  top: 14px;
   font-size: 45px;
+  width: .8em;
   right: 14px;
   font-weight: bold;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
   cursor: pointer;
 }
 
-.python-popup .py-popup .page-indicators {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  left: 50%;
-  margin-left: -1em;
-  top: 2%;
-}
-
-.python-popup .py-popup .page-indicators .py-indicator {
-  height: 8px;
-  width: 8px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: .35em;
-}
-
-.python-popup .py-popup .page-indicators .opencv-indicator {
-  height: 8px;
-  width: 8px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: .3em;
-  opacity: .2;
-}
-
-.python-popup .py-popup .page-indicators .numpy-indicator {
-  height: 8px;
-  width: 8px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: .2;
-}
-
-.python-popup .py-popup h1 {
-  color: var(--primary-color);
+.popups-projects .pop h1 {
   font-family: 'righteous';
-  font-size: 2.5em;
-  text-align: center;
-  text-decoration: underline;
-  margin-top: 1.5em;
   text-transform: uppercase;
-}
-
-.python-popup .py-popup .python-project {
-  position: relative;
-  margin-top: 1em;
-  display: block;
-}
-
-.python-popup .py-popup .python-project img {
-  width: 23em;
-  height: 15.5em;
-  position: absolute;
-  left: 50%;
-  margin-left: -11.6em;
-  border: 2px solid black;
-  border-radius: 1em;
-}
-
-.python-popup .py-popup .python-project .arrow {
-  width: 2.5em;
-  position: absolute;
-  top: 10.5em;
-  margin-left: 10.25em;
-  z-index: 995;
-  border: 0px;
-}
-
-.python-popup .py-popup .python-project .arrow:hover {
-  cursor: pointer;
-}
-
-.python-popup .py-popup .python-project h3 {
-  font-family: 'lovelo';
-  font-size: 1.2em;
-  margin-top: 1.3em;
-  padding-top: 14.5em;
-  color: black;
-  margin-bottom: 0;
   text-align: center;
-}
-
-.python-popup .py-popup .python-project p {
-  margin-top: 1em;
-  width: 25em;
-  font-family: 'now';
-  color: black;
-  font-size: 85%;
-  line-height: 1.5em;
-  padding: 2em;
-  padding-top: .75em;
-  text-indent: 2em;
-  margin-left: 1em;
-}
-
-.python-popup .py-popup .python-project .code {
-  position: absolute;
-  top: 96%;
-  left: 33%;
-  padding: .8em;
-  background: var(--secondary-color);
-  border-radius: 1em;
-  border: 2px solid var(--secondary-color);
-  font-family: 'lovelo';
-  cursor: pointer;
-}
-
-.python-popup .py-popup .open-cv {
-  position: relative;
-  margin-top: 1em;
-  display: none;
-}
-
-.python-popup .py-popup .open-cv img {
-  width: 23em;
-  position: absolute;
-  left: 50%;
-  margin-left: -11.6em;
-  border-radius: 1em;
-}
-
-.python-popup .py-popup .open-cv .back-arrow {
-  width: 2.5em;
-  position: absolute;
-  top: 16.63em;
-  margin-left: -12.8em;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  z-index: 995;
-}
-
-.python-popup .py-popup .open-cv .back-arrow:hover {
-  cursor: pointer;
-}
-
-.python-popup .py-popup .open-cv .arrow2 {
-  width: 2.5em;
-  position: absolute;
-  top: 43.5%;
-  margin-left: 10.25em;
-  z-index: 995;
-  border: 0px;
-}
-
-.python-popup .py-popup .open-cv .arrow2:hover {
-  cursor: pointer;
-}
-
-.python-popup .py-popup .open-cv h3 {
-  font-family: 'lovelo';
-  font-size: 1.2em;
-  margin-top: 1.3em;
-  padding-top: 14.5em;
-  color: black;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.python-popup .py-popup .open-cv p {
-  margin-top: 1em;
-  width: 25em;
-  font-family: 'now';
-  color: black;
-  font-size: 85%;
-  line-height: 1.5em;
-  padding: 2em;
-  padding-top: .75em;
-  text-indent: 2em;
-  margin-left: 1em;
-}
-
-.python-popup .py-popup .open-cv .code {
-  position: absolute;
-  top: 98%;
-  left: 33%;
-  padding: .8em;
-  background: var(--secondary-color);
-  border-radius: 1em;
-  border: 2px solid var(--secondary-color);
-  font-family: 'lovelo';
-  cursor: pointer;
-}
-
-.python-popup .py-popup .numpy {
-  position: relative;
-  margin-top: 1em;
-  display: none;
-}
-
-.python-popup .py-popup .numpy img {
-  width: 23em;
-  position: absolute;
-  left: 50%;
-  margin-left: -11.6em;
-  border-radius: 1em;
-}
-
-.python-popup .py-popup .numpy .back-arrow2 {
-  width: 2.5em;
-  position: absolute;
-  top: 42.5%;
-  margin-left: -12.8em;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  z-index: 995;
-}
-
-.python-popup .py-popup .numpy .back-arrow2:hover {
-  cursor: pointer;
-}
-
-.python-popup .py-popup .numpy h3 {
-  font-family: 'lovelo';
-  font-size: 1.2em;
-  margin-top: 1.3em;
-  padding-top: 14.5em;
-  color: black;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.python-popup .py-popup .numpy p {
-  margin-top: 1em;
-  width: 25em;
-  font-family: 'now';
-  color: black;
-  font-size: 85%;
-  line-height: 1.5em;
-  padding: 2em;
-  padding-top: .75em;
-  text-indent: 2em;
-  margin-left: 1em;
-}
-
-.python-popup .py-popup .numpy .code {
-  position: absolute;
-  top: 96.5%;
-  left: 33%;
-  padding: .8em;
-  background: var(--secondary-color);
-  border-radius: 1em;
-  border: 2px solid var(--secondary-color);
-  font-family: 'lovelo';
-  cursor: pointer;
-}
-
-.java-popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
-}
-
-.java-popup .bg-modal {
-  width: 100%;
-  height: 1230px;
-  background-color: black;
-  opacity: 70%;
-  position: absolute;
-  top: 0;
-  z-index: 998;
-}
-
-.java-popup .popup {
-  width: 425px;
-  height: 800px;
-  background-color: white;
-  position: absolute;
-  top: 3em;
-  z-index: 999;
-  border-radius: 1em;
-  text-transform: uppercase;
-  opacity: 1;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
-}
-
-.java-popup .popup .close {
-  position: absolute;
-  top: 0;
-  font-size: 45px;
-  right: 14px;
-  font-weight: bold;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  cursor: pointer;
-}
-
-.java-popup .popup img {
-  width: 21em;
-  height: 18em;
-  border-radius: 1em;
-  position: absolute;
-  top: 28%;
-  left: 10%;
-}
-
-.fed-popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
-}
-
-.fed-popup .bg-modal {
-  width: 100%;
-  height: 1230px;
-  background-color: black;
-  opacity: 70%;
-  position: absolute;
-  top: 0;
-  z-index: 998;
-}
-
-.fed-popup .popup {
-  width: 425px;
-  height: 810px;
-  background-color: white;
-  position: absolute;
-  top: 3em;
-  z-index: 999;
-  border-radius: 1em;
-  opacity: 1;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
-}
-
-.fed-popup .popup .close {
-  position: absolute;
-  top: 0;
-  font-size: 45px;
-  right: 14px;
-  font-weight: bold;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  cursor: pointer;
-}
-
-.fed-popup .popup h1 {
   color: var(--primary-color);
-  font-family: 'righteous';
-  font-size: 2.5em;
-  text-align: center;
-  text-decoration: underline;
   margin-top: 1.5em;
-  text-transform: uppercase;
 }
 
-.fed-popup .popup .portfolio {
-  position: relative;
-  margin-top: 1em;
+.popups-projects .formatting img {
+  width: 18em;
   display: block;
-}
-
-.fed-popup .popup .portfolio img {
-  width: 23em;
-  position: absolute;
-  left: 50%;
-  margin-left: -11.6em;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 1em;
 }
 
-.fed-popup .popup .portfolio h3 {
-  font-family: 'lovelo';
-  font-size: 1.2em;
-  margin-top: 1.3em;
-  padding-top: 14.5em;
-  color: black;
-  margin-bottom: 0;
+.popups-projects .formatting h3 {
   text-align: center;
-}
-
-.fed-popup .popup .portfolio p {
-  margin-top: .5em;
-  width: 26em;
-  font-family: 'now';
-  color: black;
-  font-size: 85%;
-  line-height: 1.5em;
-  padding: 2em;
-  padding-top: .75em;
-  text-indent: 2em;
-  margin-left: 1em;
-  margin-left: 1em;
-  margin-bottom: 1em;
-}
-
-.cad-popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
-}
-
-.cad-popup .bg-modal {
-  width: 100%;
-  height: 1230px;
-  background-color: black;
-  opacity: 70%;
-  position: absolute;
-  top: 0;
-  z-index: 998;
-}
-
-.cad-popup .popup {
-  width: 425px;
-  height: 800px;
-  background-color: white;
-  position: absolute;
-  top: 3em;
-  z-index: 999;
-  border-radius: 1em;
-  border-radius: 1em;
-  opacity: 1;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
-}
-
-.cad-popup .popup .close {
-  position: absolute;
-  top: 0;
-  font-size: 45px;
-  right: 14px;
-  font-weight: bold;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  cursor: pointer;
-}
-
-.cad-popup .popup h1 {
-  color: var(--primary-color);
-  font-family: 'righteous';
-  font-size: 2.25em;
-  text-align: center;
-  text-decoration: underline;
-  margin-top: 1.5em;
-  text-transform: uppercase;
-}
-
-.cad-popup .popup .telescope-mount {
-  position: relative;
-  margin-top: 1em;
   display: block;
-}
-
-.cad-popup .popup .telescope-mount img {
-  width: 23em;
-  position: absolute;
-  left: 50%;
-  margin-left: -11.6em;
-  border-radius: 1em;
-}
-
-.cad-popup .popup .telescope-mount h3 {
-  font-family: 'lovelo';
-  font-size: 1.2em;
-  margin-top: 1.3em;
-  padding-top: 15em;
-  color: black;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.cad-popup .popup .telescope-mount p {
-  margin-top: 0em;
-  width: 26em;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'now';
-  color: black;
-  font-size: 85%;
-  line-height: 1.5em;
-  padding: 2em;
-  padding-top: 1em;
-  text-indent: 2em;
-  margin-left: 1em;
-  margin-bottom: 1em;
+  font-weight: 900;
+  font-size: 1.4em;
+  width: 12.5em;
 }
 
-.cad-popup .popup .telescope-mount .file {
-  position: absolute;
-  top: 98%;
-  left: 33%;
-  padding: .8em;
-  background: var(--secondary-color);
-  border-radius: 1em;
-  border: 2px solid var(--secondary-color);
-  font-family: 'lovelo';
-  cursor: pointer;
-}
-
-.arduino-popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
-}
-
-.arduino-popup .bg-modal {
-  width: 100%;
-  height: 1230px;
-  background-color: black;
-  opacity: 70%;
-  position: absolute;
-  top: 0;
-  z-index: 998;
-}
-
-.arduino-popup .popup {
-  width: 425px;
-  height: 800px;
-  background-color: white;
-  position: absolute;
-  top: 3em;
-  z-index: 999;
-  border-radius: 1em;
-  opacity: 1;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
-}
-
-.arduino-popup .popup .close {
-  position: absolute;
-  top: 0;
-  font-size: 45px;
-  right: 14px;
-  font-weight: bold;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  cursor: pointer;
-}
-
-.arduino-popup .popup .arduino-page-indicators {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  left: 49%;
-  margin-left: -1em;
-  top: 2%;
-}
-
-.arduino-popup .popup .arduino-page-indicators .led-inidicator {
-  height: 8px;
-  width: 8px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: .35em;
-}
-
-.arduino-popup .popup .arduino-page-indicators .snake-game-indicator {
-  height: 8px;
-  width: 8px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: .3em;
-  opacity: .2;
-}
-
-.arduino-popup .popup .arduino-page-indicators .digital-hourglass-indicator {
-  height: 8px;
-  width: 8px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: .2;
-  margin-right: .3em;
-}
-
-.arduino-popup .popup .arduino-page-indicators .smart-bin-indicator {
-  height: 8px;
-  width: 8px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: .2;
-}
-
-.arduino-popup .popup h1 {
-  color: var(--primary-color);
-  font-family: 'righteous';
-  font-size: 2.5em;
-  text-align: center;
-  text-decoration: underline;
-  margin-top: 1.5em;
-  text-transform: uppercase;
-}
-
-.arduino-popup .popup .lamp {
-  position: relative;
-  margin-top: 1em;
+.popups-projects .formatting p {
+  font-family: 'now';
+  font-size: 1em;
+  width: 22em;
   display: block;
-  opacity: 1;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
+  margin-left: 2em;
+  margin-right: auto;
+  line-height: 24px;
 }
 
-.arduino-popup .popup .lamp img {
-  width: 23em;
-  position: absolute;
-  left: 50%;
-  margin-left: -11.6em;
+.popups-projects .formatting button {
   border-radius: 1em;
-}
-
-.arduino-popup .popup .lamp .arduino-arrow {
-  width: 2.5em;
-  position: absolute;
-  top: 17.25em;
-  margin-left: 10.25em;
-  z-index: 995;
-  border: 0px;
-}
-
-.arduino-popup .popup .lamp .arduino-arrow:hover {
-  cursor: pointer;
-}
-
-.arduino-popup .popup .lamp h3 {
+  background-color: var(--secondary-color);
   font-family: 'lovelo';
   font-size: 1.2em;
-  margin-top: 1.3em;
-  padding-top: 15em;
-  color: black;
-  margin-bottom: 0;
+  padding: .7em;
+  width: 8em;
+  border: var(--secondary-color);
   text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.arduino-popup .popup .lamp p {
-  margin-top: 0em;
-  width: 26em;
-  font-family: 'now';
-  color: black;
-  font-size: 85%;
-  line-height: 1.5em;
-  padding: 2em;
-  padding-top: 1em;
-  text-indent: 2em;
-  margin-left: 1em;
-  margin-bottom: 1em;
-}
-
-.arduino-popup .popup .lamp .files {
-  position: absolute;
-  top: 99%;
-  left: 33%;
-  padding: .8em;
-  background: var(--secondary-color);
-  border-radius: 1em;
-  border: 2px solid var(--secondary-color);
-  font-family: 'lovelo';
+.popups-projects .formatting button:hover {
   cursor: pointer;
 }
 
-.arduino-popup .popup .snake-game {
-  position: relative;
-  margin-top: 1em;
-  display: none;
-  opacity: 1;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
-}
-
-.arduino-popup .popup .snake-game img {
-  width: 23em;
-  position: absolute;
-  left: 50%;
-  margin-left: -11.6em;
-  border-radius: 1em;
-}
-
-.arduino-popup .popup .snake-game .arduino-arrow2 {
-  width: 2.5em;
-  position: absolute;
-  top: 47%;
-  margin-left: 10.25em;
-  z-index: 995;
-  border: 0px;
-}
-
-.arduino-popup .popup .snake-game .arduino-arrow2:hover {
-  cursor: pointer;
-}
-
-.arduino-popup .popup .snake-game .arduino-back-arrow {
-  width: 2.5em;
-  position: absolute;
-  top: 47%;
-  margin-left: -12.8em;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  z-index: 995;
-}
-
-.arduino-popup .popup .snake-game .arduino-back-arrow:hover {
-  cursor: pointer;
-}
-
-.arduino-popup .popup .snake-game h3 {
-  font-family: 'lovelo';
-  font-size: 1.2em;
-  margin-top: 1.3em;
-  padding-top: 15.5em;
-  color: black;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.arduino-popup .popup .snake-game p {
-  margin-top: 0em;
-  width: 26em;
-  font-family: 'now';
-  color: black;
-  font-size: 85%;
-  line-height: 1.5em;
-  padding: 2em;
-  padding-top: 1em;
-  text-indent: 2em;
-  margin-left: 1em;
-  margin-bottom: 1em;
-}
-
-.arduino-popup .popup .snake-game .files {
-  position: absolute;
-  top: 97%;
-  left: 33%;
-  padding: .8em;
-  background: var(--secondary-color);
-  border-radius: 1em;
-  border: 2px solid var(--secondary-color);
-  font-family: 'lovelo';
-  cursor: pointer;
-}
-
-.arduino-popup .popup .hourglass {
-  position: relative;
-  margin-top: 1em;
-  display: none;
-  opacity: 1;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
-}
-
-.arduino-popup .popup .hourglass img {
-  width: 23em;
-  position: absolute;
-  left: 50%;
-  margin-left: -11.6em;
-  border-radius: 1em;
-}
-
-.arduino-popup .popup .hourglass .arduino-arrow3 {
-  width: 2.5em;
-  position: absolute;
-  top: 48%;
-  margin-left: 10.25em;
-  z-index: 995;
-  border: 0px;
-}
-
-.arduino-popup .popup .hourglass .arduino-arrow3:hover {
-  cursor: pointer;
-}
-
-.arduino-popup .popup .hourglass .arduino-back-arrow2 {
-  width: 2.5em;
-  position: absolute;
-  top: 48%;
-  margin-left: -12.8em;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  z-index: 995;
-}
-
-.arduino-popup .popup .hourglass .arduino-back-arrow2:hover {
-  cursor: pointer;
-}
-
-.arduino-popup .popup .hourglass h3 {
-  font-family: 'lovelo';
-  font-size: 1.2em;
-  margin-top: 1.3em;
-  padding-top: 15.5em;
-  color: black;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.arduino-popup .popup .hourglass p {
-  margin-top: 0em;
-  width: 27em;
-  font-family: 'now';
-  color: black;
-  font-size: 85%;
-  line-height: 1.5em;
-  padding: 2em;
-  padding-top: 1em;
-  text-indent: 2em;
-  margin-left: 1em;
-  margin-bottom: 1em;
-}
-
-.arduino-popup .popup .hourglass .files {
-  position: absolute;
-  top: 99%;
-  left: 33%;
-  padding: .8em;
-  background: var(--secondary-color);
-  border-radius: 1em;
-  border: 2px solid var(--secondary-color);
-  font-family: 'lovelo';
-  cursor: pointer;
-}
-
-.arduino-popup .popup .smartbin {
-  position: relative;
-  margin-top: 1em;
-  display: none;
-  opacity: 1;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
-}
-
-.arduino-popup .popup .smartbin img {
-  width: 23em;
-  position: absolute;
-  left: 50%;
-  margin-left: -11.6em;
-  border-radius: 1em;
-}
-
-.arduino-popup .popup .smartbin .arduino-back-arrow3 {
-  width: 2.5em;
+.popups-projects .formatting .right-arrow {
   position: absolute;
   top: 45%;
-  margin-left: -12.8em;
+  left: 80%;
+  width: 5em;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  z-index: 995;
 }
 
-.arduino-popup .popup .smartbin .arduino-back-arrow3:hover {
-  cursor: pointer;
-}
-
-.arduino-popup .popup .smartbin h3 {
-  font-family: 'lovelo';
-  font-size: 1.2em;
-  margin-top: 1.3em;
-  padding-top: 14em;
-  color: black;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.arduino-popup .popup .smartbin p {
-  margin-top: 0em;
-  width: 27em;
-  font-family: 'now';
-  color: black;
-  font-size: 85%;
-  line-height: 1.5em;
-  padding: 2em;
-  padding-top: 1em;
-  text-indent: 2em;
-  margin-left: 1em;
-  margin-bottom: 1em;
-}
-
-.arduino-popup .popup .smartbin .files {
+.popups-projects .formatting .left-arrow {
   position: absolute;
-  top: 99%;
-  left: 33%;
-  padding: .8em;
-  background: var(--secondary-color);
-  border-radius: 1em;
-  border: 2px solid var(--secondary-color);
-  font-family: 'lovelo';
-  cursor: pointer;
+  top: 45%;
+  width: 5em;
+}
+
+.popups-projects .software-pops .python-popup {
+  display: none;
+}
+
+.popups-projects .software-pops .python-popup .python-project {
+  display: block;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.popups-projects .software-pops .python-popup .python-project .python-project-img {
+  margin-top: -.5em;
+  border: 2px solid black;
+}
+
+.popups-projects .software-pops .python-popup .python-project p {
+  margin-top: -1em;
+}
+
+.popups-projects .software-pops .python-popup .python-project button {
+  margin-top: -.25em;
+}
+
+.popups-projects .software-pops .python-popup .opencv-project {
+  display: none;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.popups-projects .software-pops .python-popup .opencv-project .right-arrow {
+  top: 40%;
+}
+
+.popups-projects .software-pops .python-popup .opencv-project .left-arrow {
+  top: 40%;
+}
+
+.popups-projects .software-pops .python-popup .numpy-project {
+  display: none;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.popups-projects .software-pops .python-popup .numpy-project .left-arrow {
+  top: 41%;
+}
+
+.popups-projects .software-pops .fed-popup {
+  display: none;
+}
+
+.popups-projects .software-pops .java-popup {
+  display: none;
+}
+
+.popups-projects .software-pops .java-popup .soon {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  height: 15em;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.popups-projects .design-pops .cad-popup {
+  display: none;
+}
+
+.popups-projects .hardware-pops .arduino-popup {
+  display: none;
+}
+
+.popups-projects .hardware-pops .arduino-popup .led-project .right-arrow {
+  top: 41%;
+}
+
+.popups-projects .hardware-pops .arduino-popup .snake-game {
+  display: none;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.popups-projects .hardware-pops .arduino-popup .snake-game .right-arrow {
+  top: 42.5%;
+}
+
+.popups-projects .hardware-pops .arduino-popup .snake-game .left-arrow {
+  top: 42.5%;
+}
+
+.popups-projects .hardware-pops .arduino-popup .hourglass-project {
+  display: none;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.popups-projects .hardware-pops .arduino-popup .hourglass-project .right-arrow {
+  top: 42.5%;
+}
+
+.popups-projects .hardware-pops .arduino-popup .hourglass-project .left-arrow {
+  top: 42.5%;
+}
+
+.popups-projects .hardware-pops .arduino-popup .smartbin-project {
+  display: none;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.popups-projects .hardware-pops .arduino-popup .smartbin-project .left-arrow {
+  top: 39.5%;
 }
 
 body.experience {
@@ -1759,134 +1023,25 @@ section.interact .details:hover {
   cursor: pointer;
 }
 
-.robotics-popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
-}
-
-.robotics-popup .bg-modal {
+.popups-experience .bg-tint {
   width: 100%;
-  height: 1230px;
+  height: 1300px;
   background-color: black;
   opacity: 70%;
   position: absolute;
   top: 0;
   z-index: 998;
+  display: none;
 }
 
-.robotics-popup .popup {
-  width: 425px;
+.popups-experience .pop {
+  width: 400px;
   height: 800px;
   background-color: white;
-  position: absolute;
-  top: 3em;
-  z-index: 999;
-  border-radius: 1em;
-  opacity: 1;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
-}
-
-.robotics-popup .popup .close {
-  position: absolute;
-  top: 0;
-  font-size: 45px;
-  right: 14px;
-  font-weight: bold;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  cursor: pointer;
-}
-
-.robotics-popup .popup h1 {
-  color: var(--primary-color);
-  font-family: 'righteous';
-  font-size: 2.5em;
-  text-align: center;
-  text-decoration: underline;
-  margin-top: 1.5em;
-  text-transform: uppercase;
-}
-
-.robotics-popup .popup .allspark-nine {
-  position: relative;
-  margin-top: 1em;
-  display: block;
-}
-
-.robotics-popup .popup .allspark-nine img {
-  width: 16.5em;
-  position: absolute;
-  left: 62%;
-  margin-left: -11.6em;
-  border-radius: 50%;
-}
-
-.robotics-popup .popup .allspark-nine h3 {
-  font-family: 'lovelo';
-  font-size: 1.2em;
-  margin-top: 1.3em;
-  width: 18em;
-  padding-top: 13.4em;
-  color: black;
-  margin-bottom: 0;
   position: absolute;
   left: 50%;
-  margin-left: -9em;
-  text-align: center;
-}
-
-.robotics-popup .popup .allspark-nine p {
-  margin-top: 0em;
-  width: 26em;
-  font-family: 'now';
-  color: black;
-  font-size: 85%;
-  line-height: 1.5em;
-  padding: 2em;
-  position: absolute;
-  top: 23em;
-  text-indent: 2em;
-  margin-left: .8em;
-  margin-bottom: 1em;
-}
-
-.cadets-popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
-}
-
-.cadets-popup .bg-modal {
-  width: 100%;
-  height: 1230px;
-  background-color: black;
-  opacity: 70%;
-  position: absolute;
-  top: 0;
-  z-index: 998;
-}
-
-.cadets-popup .popup {
-  width: 425px;
-  height: 800px;
-  background-color: white;
-  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 3em;
   z-index: 999;
   border-radius: 1em;
@@ -1895,158 +1050,63 @@ section.interact .details:hover {
           animation: fadeIn 1s ease-in;
 }
 
-.cadets-popup .popup .close {
+.popups-experience .pop .close {
   position: absolute;
-  top: 0;
+  top: 14px;
   font-size: 45px;
+  width: .8em;
   right: 14px;
   font-weight: bold;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
   cursor: pointer;
 }
 
-.cadets-popup .popup h1 {
-  color: var(--primary-color);
+.popups-experience .formatting h1 {
   font-family: 'righteous';
-  font-size: 2.5em;
-  text-align: center;
-  text-decoration: underline;
-  margin-top: 1.5em;
   text-transform: uppercase;
-}
-
-.cadets-popup .popup .cadets {
-  position: relative;
-  margin-top: 1em;
-  display: block;
-}
-
-.cadets-popup .popup .cadets img {
-  width: 16.5em;
-  position: absolute;
-  left: 62%;
-  margin-left: -11.6em;
-  border-radius: 50%;
-}
-
-.cadets-popup .popup .cadets h3 {
-  font-family: 'lovelo';
-  font-size: 1.2em;
-  margin-top: 1.3em;
-  padding-top: 15em;
-  color: black;
-  margin-bottom: 0;
   text-align: center;
+  color: var(--primary-color);
+  margin-top: 1.5em;
 }
 
-.cadets-popup .popup .cadets p {
-  margin-top: 0em;
-  width: 26em;
+.popups-experience .formatting img {
+  width: 18em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1em;
+}
+
+.popups-experience .formatting h3 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'now';
-  color: black;
-  font-size: 85%;
-  line-height: 1.5em;
-  padding: 2em;
-  padding-top: 1em;
-  text-indent: 2em;
-  margin-left: .8em;
-  margin-bottom: 1em;
+  font-weight: 900;
+  font-size: 1.4em;
+  width: 12.5em;
 }
 
-.interact-popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.popups-experience .formatting p {
+  font-family: 'now';
+  font-size: 1em;
+  width: 22em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 24px;
+}
+
+.popups-experience .robotics-popup {
   display: none;
 }
 
-.interact-popup .bg-modal {
-  width: 100%;
-  height: 1230px;
-  background-color: black;
-  opacity: 70%;
-  position: absolute;
-  top: 0;
-  z-index: 998;
+.popups-experience .cadets-popup {
+  display: none;
 }
 
-.interact-popup .popup {
-  width: 425px;
-  height: 800px;
-  background-color: white;
-  position: absolute;
-  top: 3em;
-  z-index: 999;
-  border-radius: 1em;
-  opacity: 1;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
-}
-
-.interact-popup .popup .close {
-  position: absolute;
-  top: 0;
-  font-size: 45px;
-  right: 14px;
-  font-weight: bold;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  cursor: pointer;
-}
-
-.interact-popup .popup h1 {
-  color: var(--primary-color);
-  font-family: 'righteous';
-  font-size: 2.5em;
-  text-align: center;
-  text-decoration: underline;
-  margin-top: 1.5em;
-  text-transform: uppercase;
-}
-
-.interact-popup .popup .interact {
-  position: relative;
-  margin-top: 1em;
-  display: block;
-}
-
-.interact-popup .popup .interact img {
-  width: 16.5em;
-  position: absolute;
-  left: 62%;
-  margin-left: -11.6em;
-  border-radius: 50%;
-}
-
-.interact-popup .popup .interact h3 {
-  font-family: 'lovelo';
-  font-size: 1.2em;
-  margin-top: 1.3em;
-  padding-top: 15em;
-  color: black;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.interact-popup .popup .interact p {
-  margin-top: 0em;
-  width: 26em;
-  font-family: 'now';
-  color: black;
-  font-size: 85%;
-  line-height: 1.5em;
-  padding: 2em;
-  padding-top: 1em;
-  text-indent: 2em;
-  margin-left: 1em;
-  margin-bottom: .8em;
+.popups-experience .interact-popup {
+  display: none;
 }
 
 @media only screen and (min-width: 744px) {
@@ -3470,7 +2530,7 @@ footer h5 a {
   text-decoration: none;
 }
 
-@media only screen and (width: 428px) {
+@media only screen and (max-width: 429px) {
   .contact-section .container .form {
     width: 17em;
     position: absolute;
