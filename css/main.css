@@ -399,12 +399,12 @@
   padding-bottom: 2em;
   color: var(--secondary-color);
   font-family: "now";
-  width: 10em;
+  width: 13.5em;
   margin-top: 0em;
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-75%);
-          transform: translateX(-75%);
+  left: 45%;
+  -webkit-transform: translateX(-48%);
+          transform: translateX(-48%);
 }
 
 .contact-section .container .form input {
@@ -3459,7 +3459,10 @@ footer h5 {
   color: white;
   text-align: center;
   padding-bottom: 6em;
-  width: 40em;
+  width: 20em;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer h5 a {

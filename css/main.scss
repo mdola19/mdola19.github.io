@@ -337,11 +337,11 @@
             padding-bottom: 2em;
             color: var(--secondary-color);
             font-family: "now";
-            width: 10em;
+            width: 13.5em;
             margin-top: 0em;
             position: absolute;
-            left: 50%;
-            transform: translateX(-75%);
+            left: 45%;
+            transform: translateX(-48%);
             
             input {
                 border-radius: 1em;
@@ -3429,7 +3429,9 @@ footer {
         color: white;
         text-align: center;
         padding-bottom: 6em;
-        width: 40em;
+        width: 20em;
+        margin-left: 50%;
+        transform: translateX(-50%);
 
         a {
             color: var(--secondary-color);
@@ -3437,6 +3439,7 @@ footer {
         }
     }
 }
+
 
 @media only screen and (min-width: 1255px) {
 
