@@ -2290,8 +2290,8 @@ section.interact .details:hover {
     font-weight: 900;
   }
   nav.open {
-    clip-path: circle(1100px at 95% -15%);
-    -webkit-clip-path: circle(1100px at 95% -15%);
+    clip-path: circle(1200px at 95% -15%);
+    -webkit-clip-path: circle(1200px at 95% -15%);
   }
   .left-side, .right-side {
     list-style-type: none;
