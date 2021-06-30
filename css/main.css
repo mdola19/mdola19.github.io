@@ -2532,9 +2532,9 @@ footer h5 a {
 
 @media only screen and (max-width: 429px) {
   .contact-section .container .form {
-    width: 16em;
+    width: 15em;
     position: absolute;
-    left: 50%;
+    left: 60%;
     top: 25%;
   }
   footer {
