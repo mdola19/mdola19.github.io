@@ -3474,7 +3474,8 @@ footer h5 a {
   .contact-section .container .form {
     width: 15em;
     position: absolute;
-    left: 50%;
+    left: 60%;
+    top: 10%;
   }
   footer {
     height: 410px;
