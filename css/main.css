@@ -360,6 +360,7 @@
   padding-bottom: 3em;
   display: block;
   height: 790px;
+  width: 100%;
 }
 
 .contact-section .container {
@@ -371,7 +372,8 @@
   width: 21em;
   position: absolute;
   left: 50%;
-  margin-left: -10.5em;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
 }
 
 .contact-section .container h2 {
@@ -399,7 +401,7 @@
   font-family: "now";
   width: 10em;
   padding-left: 3em;
-  margin-top: -1em;
+  margin-top: 0em;
 }
 
 .contact-section .container .form input {
@@ -2088,7 +2090,7 @@ section.interact .details:hover {
   }
   .hero {
     display: block;
-    height: 90vh;
+    height: 800px;
   }
   .hero .heading {
     font-family: "lovelo";
@@ -2147,7 +2149,7 @@ section.interact .details:hover {
     content: '';
     position: absolute;
     width: 100%;
-    height: 51em;
+    height: 850px;
     background: var(--primary-color);
     left: 0;
     top: 2em;
@@ -2158,7 +2160,7 @@ section.interact .details:hover {
 
 @media only screen and (min-width: 1200px) {
   .hero {
-    height: 90vh;
+    height: 600px;
   }
   .hero .container {
     display: -webkit-box;
@@ -2167,8 +2169,8 @@ section.interact .details:hover {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -70%);
-            transform: translate(-50%, -70%);
+    -webkit-transform: translate(-50%, -65%);
+            transform: translate(-50%, -65%);
     width: 60em;
   }
   .hero .heading {
@@ -2229,7 +2231,7 @@ section.interact .details:hover {
     content: '';
     position: absolute;
     width: 100%;
-    height: 51em;
+    height: 900px;
     background: var(--primary-color);
     left: 0;
     top: 2em;
@@ -2279,7 +2281,8 @@ section.interact .details:hover {
     font-size: 1.8em;
     text-align: center;
     margin-top: 1em;
-    margin-right: .75 em;
+    margin-left: auto;
+    margin-right: auto;
   }
   nav li:hover {
     font-weight: 900;
@@ -2315,7 +2318,7 @@ section.interact .details:hover {
   }
   .hero {
     display: block;
-    height: 98vh;
+    height: 650px;
   }
   .hero .heading {
     font-family: "lovelo";
@@ -2888,6 +2891,9 @@ section.interact .details:hover {
     text-align: center;
     z-index: 800;
   }
+  .hero {
+    height: 650px;
+  }
   .hero .container .typing {
     width: 18em;
     text-align: center;
@@ -3428,7 +3434,7 @@ section.interact .details:hover {
 
 footer {
   background-color: #333030;
-  height: 350px;
+  height: 400px;
   margin-top: -2em;
   z-index: 800;
 }
@@ -3438,7 +3444,7 @@ footer h1 {
   font-weight: bold;
   text-align: center;
   color: var(--primary-color);
-  padding: 3.5em 1em 0 1em;
+  padding: 4em 1em 0 1em;
   font-size: 2em;
   line-height: 1.6em;
 }
@@ -3449,6 +3455,7 @@ footer h5 {
   color: white;
   text-align: center;
   padding-bottom: 6em;
+  width: 40em;
 }
 
 footer h5 a {
@@ -3458,7 +3465,7 @@ footer h5 a {
 
 @media only screen and (min-width: 1255px) {
   .hero {
-    height: 90vh;
+    height: 800px;
   }
   .hero .container {
     display: -webkit-box;
@@ -3467,8 +3474,8 @@ footer h5 a {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -70%);
-            transform: translate(-50%, -70%);
+    -webkit-transform: translate(-50%, -55%);
+            transform: translate(-50%, -55%);
     width: 60em;
   }
 }
