@@ -3438,7 +3438,7 @@ section.interact .details:hover {
 
 footer {
   background-color: #333030;
-  height: 400px;
+  height: 410px;
   margin-top: -2em;
   z-index: 800;
 }
@@ -3468,6 +3468,22 @@ footer h5 {
 footer h5 a {
   color: var(--secondary-color);
   text-decoration: none;
+}
+
+@media only screen and (width: 428px) {
+  .contact-section .container .form {
+    width: 15em;
+    position: absolute;
+    left: 45%;
+    -webkit-transform: translateX(-48%);
+            transform: translateX(-48%);
+  }
+  footer {
+    height: 410px;
+  }
+  footer h5 {
+    width: 18em;
+  }
 }
 
 @media only screen and (min-width: 1255px) {
