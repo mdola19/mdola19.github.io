@@ -31,6 +31,7 @@
     overflow-x: hidden;
 }
 
+
 .navbar {
     font-weight: 400;
     font-size: .9em;
@@ -171,7 +172,7 @@
         margin-top: 3.6em;
         padding: 3em;
         text-align: center;
-        height: 850px;
+        height: 900px;
     
             .about-title {
                 font-family: 'lovelo';
@@ -300,7 +301,6 @@
     padding-bottom: 3em;
     display: block;
     height: 790px;
-    width: 100%;
 
     .container {
 
@@ -310,6 +310,7 @@
         border-radius: 3em;
         position: relative;
         width: 21em;
+        height: 43.5em;
         position: absolute;
         left: 50%;
         transform: translateX(-60%);
@@ -337,8 +338,10 @@
             color: var(--secondary-color);
             font-family: "now";
             width: 10em;
-            padding-left: 3em;
             margin-top: 0em;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-75%);
             
             input {
                 border-radius: 1em;
@@ -2182,8 +2185,7 @@ section.interact {
             font-size: 1.8em;
             text-align: center;
             margin-top: 1em;
-            margin-left: auto;
-            margin-right: auto;
+            margin-left: -1em;
     
             &:hover {
                 font-weight: 900;
@@ -2670,6 +2672,7 @@ section.interact {
                     left: 50%;
                     transform: translate(-50%, 0);
                     top: 39%;
+                    width: 12em;
                     font-family: 'righteous';
                     font-size: 1.8em;
                     text-transform: uppercase;
@@ -2765,7 +2768,8 @@ section.interact {
     
                 h4 {
                     position: absolute;
-                    width: 10em;
+                    overflow-x: hidden;
+                    width: 12em;
                     left: 50.5%;
                     transform: translate(-50%, 0);
                     top: 32%;
