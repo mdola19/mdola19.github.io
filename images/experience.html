@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="experience">
+
+    <div class="navbar">
+
+        <div class="container">
+
+            <img id="hb" class="hamburger" 
+            src="images/menu.svg" alt="hamburger">
+            
+            <img class="logo" src="images/experience.svg" alt="logo">
+
+            
+            <nav>
+                <!-- <img id="exit-btn" class="x-btn" src="images/exit.svg" alt="exit"> -->
+
+                <ul class="left-side">
+                    <li class="current"><a href="index.html">Home</a></li>
+
+                    <li><a href="project.html">Projects</a></li>
+
+                    <li><a href="experience.html">Experience</a></li>
+                </ul>
+
+                <ul class="right-side">
+                    <li><a id= "contact-navbar" href="index.html#contact">Contact</a></li> 
+                    <li><a href="">Resume</a></li>
+                    <li><a href="https://github.com/mdola19"><img class="github" src="images/github.svg" alt="github logo"></a></li>
+                </ul>
+             </nav>
+        </div>
+    </div>
+
+    <section class="robotics">
+    
+        <h1>Allspark 9</h1>
+
+        <a href="#" id="robotics-details" class="details">Details</a>
+
+    </section>
+
+    <section class="cadets">
+    
+        <h1>132 Spitfire</h1>
+
+        <a href="#" id="cadets-details" class="details">Details</a>
+
+    </section>
+
+    <section class="interact">
+    
+        <h1>CPSS Interact</h1>
+
+        <a href="#" id="interact-details" class="details">Details</a>
+
+    </section>
+
+    <div class="popups-experience">
+
+        <div class="bg-tint fadeIn"></div>
+
+        <div class="robotics-popup pop formatting">
+
+            <img class='close' id="robotics-x" src="images/x.svg" alt="">
+
+            <h1>Allspark 9</h1>
+
+            <img src="images/allspark9.jpg" alt="">
+
+            <h3>Innovation Technical Subteam Member</h3>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita adipisci, porro eos asperiores illo ab ea iure illum iste laborum at quod modi ex. Natus totam non tempora cum, molestias sunt sed quaerat. Doloribus quos facilis corrupti! Nisi temporibus vitae harum asperiores quis alias quod qui fugiat et, nihil rem? Sapiente nisi libero deserunt, inventore fugit dolorem nulla tenetur. Facilis rem quisquam ut magni ipsum, consequatur a provident cum tempore?</p>
+
+        </div>
+
+        <div class="cadets-popup pop formatting">
+
+            <img id="cadets-x" class='close' src="images/x.svg" alt="">
+
+            <h1>132 Spitfire</h1>
+
+            <img src="images/cadets.png" alt="">
+
+            <h3>Sergeant</h3>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita adipisci, porro eos asperiores illo ab ea iure illum iste laborum at quod modi ex. Natus totam non tempora cum, molestias sunt sed quaerat. Doloribus quos facilis corrupti! Nisi temporibus vitae harum asperiores quis alias quod qui fugiat et, nihil rem? Sapiente nisi libero deserunt, inventore fugit dolorem nulla tenetur. Facilis rem quisquam ut magni ipsum, consequatur a provident cum tempore?</p>
+
+        </div>
+
+        <div class="interact-popup pop formatting">
+
+            <img id="interact-x" class='close' src="images/x.svg" alt="">
+
+            <h1>CPSS Interact</h1>
+
+            <img src="images/interact-logo.jpg" alt="">
+
+            <h3>General Member</h3>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita adipisci, porro eos asperiores illo ab ea iure illum iste laborum at quod modi ex. Natus totam non tempora cum, molestias sunt sed quaerat. Doloribus quos facilis corrupti! Nisi temporibus vitae harum asperiores quis alias quod qui fugiat et, nihil rem? Sapiente nisi libero deserunt, inventore fugit dolorem nulla tenetur. Facilis rem quisquam ut magni ipsum, consequatur a provident cum tempore?</p>
+
+        </div>
+
+    </div>
+
+    <footer> 
+        <div class="copy-right">
+            <h1>Copyright 2021 Manjot Dola. All Rights Reserved</h1>
+        </div>
+
+        <h5>Images and icons sourced from <a href="https://pixabay.com/">Pixabay</a>, <a href="https://www.pexels.com/">Pexels</a>, and <a href="https://iconscout.com/unicons">iconscout</a></h5>
+    </footer>
+
+    <script src="main.js">
+
+    </script>
+
+    <script>
+
+    document.getElementById('robotics-details').addEventListener('click', 
+        function() {
+            document.querySelector('.robotics-popup').style.display = 'block';
+            document.querySelector('.bg-tint').style.display = 'block'
+    });
+
+    document.getElementById('robotics-x').addEventListener('click', 
+        function(){
+            document.querySelector('.robotics-popup').style.display = 'none';
+            document.querySelector('.bg-tint').style.display = 'none';
+    });
+
+    document.getElementById('cadets-details').addEventListener('click', 
+        function() {
+            document.querySelector('.cadets-popup').style.display = 'block';
+            document.querySelector('.bg-tint').style.display = 'block'
+    });
+
+    document.getElementById('cadets-x').addEventListener('click', 
+        function(){
+            document.querySelector('.cadets-popup').style.display = 'none';
+            document.querySelector('.bg-tint').style.display = 'none';
+    });
+
+    document.getElementById('interact-details').addEventListener('click', 
+        function() {
+            document.querySelector('.interact-popup').style.display = 'block';
+            document.querySelector('.bg-tint').style.display = 'block'
+    });
+
+    document.getElementById('interact-x').addEventListener('click', 
+        function(){
+            document.querySelector('.interact-popup').style.display = 'none';
+            document.querySelector('.bg-tint').style.display = 'none';
+    });
+
+
+    </script>
+
+</body>
+</html>

@@ -2533,7 +2533,7 @@ footer h5 a {
 @media only screen and (max-width: 430px) {
   .contact-section .container .form {
     width: 15em;
-    left: 47%;
+    padding-left: 1em;
   }
   .contact-section .container .form input {
     width: 18em;
