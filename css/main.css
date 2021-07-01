@@ -2531,12 +2531,15 @@ footer h5 a {
 }
 
 @media only screen and (max-width: 430px) {
-  .contact-section .container {
-    height: 590px;
-  }
   .contact-section .container .form {
-    width: 21em;
-    left: 55%;
+    width: 15em;
+    left: 47%;
+  }
+  .contact-section .container .form input {
+    width: 18em;
+  }
+  .contact-section .container .form textarea {
+    width: 19em;
   }
   footer {
     height: 410px;

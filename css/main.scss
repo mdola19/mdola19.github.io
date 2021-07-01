@@ -2564,12 +2564,17 @@ footer {
 @media only screen and (max-width: 430px) {
     .contact-section {
         .container {
-
-            height: 590px;
-
             .form {
-                width: 21em;
-                left: 55%;
+                width: 15em;
+                left: 47%;
+
+                input {
+                    width: 18em;
+                }
+
+                textarea {
+                    width: 19em;
+                }
             }
         }
     }
