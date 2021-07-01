@@ -397,14 +397,14 @@
 
 .contact-section .container .form {
   padding-bottom: 2em;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-family: "now";
   width: 70%;
-  margin-top: 0em;
+  top: 50%;
   position: absolute;
   left: 45%;
-  -webkit-transform: translateX(-48%);
-          transform: translateX(-48%);
+  -webkit-transform: translate(-48%, -35%);
+          transform: translate(-48%, -35%);
 }
 
 .contact-section .container .form input {
@@ -430,9 +430,8 @@
 .contact-section .container .form .submit-btn {
   padding: .7em;
   width: 8em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  left: 31%;
   border-radius: 2em;
   color: black;
   font-family: 'lovelo';
