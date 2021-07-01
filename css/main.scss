@@ -2565,10 +2565,9 @@ footer {
     .contact-section {
         .container {
             .form {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                color: var(--primary-color);
+                position: absolute;
+                left: 45%;
+                top: 25%;
             }
         }
     }
