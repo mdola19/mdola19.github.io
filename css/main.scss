@@ -2565,11 +2565,12 @@ footer {
     .contact-section {
         .container {
 
+            height: 675px;
 
             .form {
                 width: 15em;
                 padding-left: 1em;
-                
+
                 input {
                     width: 20em;
                 }
@@ -2578,8 +2579,8 @@ footer {
                     width: 21em;
                 }
 
-                button {
-                    text-align: center;
+                .submit-btn {
+                    margin-left: 7em;
                 }
             }
         }

@@ -2531,6 +2531,9 @@ footer h5 a {
 }
 
 @media only screen and (max-width: 430px) {
+  .contact-section .container {
+    height: 675px;
+  }
   .contact-section .container .form {
     width: 15em;
     padding-left: 1em;
@@ -2541,8 +2544,8 @@ footer h5 a {
   .contact-section .container .form textarea {
     width: 21em;
   }
-  .contact-section .container .form button {
-    text-align: center;
+  .contact-section .container .form .submit-btn {
+    margin-left: 7em;
   }
   footer {
     height: 410px;
