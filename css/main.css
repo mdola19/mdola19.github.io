@@ -2537,10 +2537,13 @@ footer h5 a {
     color: #30e6f7;
   }
   .contact-section .container .form input {
-    width: 18em;
+    width: 20em;
   }
   .contact-section .container .form textarea {
-    width: 19em;
+    width: 21em;
+  }
+  .contact-section .container .form button {
+    text-align: center;
   }
   footer {
     height: 410px;
