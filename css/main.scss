@@ -2561,7 +2561,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 429px) {
+@media only screen and (min-width: 429px) {
     .contact-section {
         .container {
             .form {
