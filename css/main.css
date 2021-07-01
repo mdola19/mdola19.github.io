@@ -2537,6 +2537,7 @@ footer h5 a {
   .contact-section .container .form {
     width: 15em;
     padding-left: 1em;
+    margin-top: 1.5em;
   }
   .contact-section .container .form input {
     width: 20em;
