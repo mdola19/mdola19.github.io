@@ -335,9 +335,9 @@
 
         .form {
             padding-bottom: 2em;
-            color: var(--secondary-color);
+            color: var(--primary-color);
             font-family: "now";
-            width: 13.5em;
+            width: 70%;
             margin-top: 0em;
             position: absolute;
             left: 45%;
@@ -348,7 +348,7 @@
                 margin-bottom: 1em;
                 margin-top: .7em;
                 padding: 1em;
-                width: 16em;
+                width: 100%;
                 font-family: "now";
             }
 
@@ -357,16 +357,18 @@
                 margin-bottom: 1em;
                 margin-top: .7em;
                 text-indent: 5px;
-                padding: .5em;
+                padding: 1em;
                 padding-top: .7em;
                 font-family: "now";
-                width: 17em;
+                width: 100%;
             }
 
             .submit-btn {
                 padding: .7em;
-                margin-left: 5em;
                 width: 8em;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
                 border-radius: 2em;
                 color: black;
                 font-family: 'lovelo';
@@ -2562,30 +2564,30 @@ footer {
 }
 
 @media only screen and (max-width: 430px) {
-    .contact-section {
-        .container {
+    // .contact-section {
+    //     .container {
 
-            height: 675px;
+    //         height: 675px;
 
-            .form {
-                width: 15em;
-                padding-left: 1em;
-                margin-top: 1.5em;
+    //         .form {
+    //             width: 15em;
+    //             padding-left: 1em;
+    //             margin-top: 1.5em;
 
-                input {
-                    width: 20em;
-                }
+    //             input {
+    //                 width: 20em;
+    //             }
 
-                textarea {
-                    width: 21em;
-                }
+    //             textarea {
+    //                 width: 21em;
+    //             }
 
-                .submit-btn {
-                    margin-left: 7em;
-                }
-            }
-        }
-    }
+    //             .submit-btn {
+    //                 margin-left: 7em;
+    //             }
+    //         }
+    //     }
+    // }
     
     footer {
 

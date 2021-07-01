@@ -397,9 +397,9 @@
 
 .contact-section .container .form {
   padding-bottom: 2em;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-family: "now";
-  width: 13.5em;
+  width: 70%;
   margin-top: 0em;
   position: absolute;
   left: 45%;
@@ -412,7 +412,7 @@
   margin-bottom: 1em;
   margin-top: .7em;
   padding: 1em;
-  width: 16em;
+  width: 100%;
   font-family: "now";
 }
 
@@ -421,16 +421,18 @@
   margin-bottom: 1em;
   margin-top: .7em;
   text-indent: 5px;
-  padding: .5em;
+  padding: 1em;
   padding-top: .7em;
   font-family: "now";
-  width: 17em;
+  width: 100%;
 }
 
 .contact-section .container .form .submit-btn {
   padding: .7em;
-  margin-left: 5em;
   width: 8em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 2em;
   color: black;
   font-family: 'lovelo';
@@ -2531,23 +2533,6 @@ footer h5 a {
 }
 
 @media only screen and (max-width: 430px) {
-  .contact-section .container {
-    height: 675px;
-  }
-  .contact-section .container .form {
-    width: 15em;
-    padding-left: 1em;
-    margin-top: 1.5em;
-  }
-  .contact-section .container .form input {
-    width: 20em;
-  }
-  .contact-section .container .form textarea {
-    width: 21em;
-  }
-  .contact-section .container .form .submit-btn {
-    margin-left: 7em;
-  }
   footer {
     height: 410px;
   }
