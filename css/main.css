@@ -428,10 +428,13 @@
 }
 
 .contact-section .container .form .submit-btn {
-  padding: .7em;
+  padding: 4%;
   width: 8em;
   position: absolute;
-  left: 31%;
+  left: 50%;
+  top: 94%;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
   border-radius: 2em;
   color: black;
   font-family: 'lovelo';
