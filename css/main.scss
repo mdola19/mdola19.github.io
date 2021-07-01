@@ -2561,11 +2561,14 @@ footer {
     }
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (max-width: 430px) {
     .contact-section {
         .container {
+
+            height: 590px;
+
             .form {
-                width: 20em;
+                width: 22em;
                 left: 55%;
             }
         }
