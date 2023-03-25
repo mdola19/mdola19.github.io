@@ -114,9 +114,11 @@
 
                     <h3>Rock, Paper, Scissors Simulator</h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore eligendi! Autem ut quaerat error repellat nemo sed obcaecati voluptates ipsa! Iste, eligendi commodi! Quis itaque tenetur obcaecati dolorem sed non, in consequatur ipsam minima minus fugiat incidunt esse aut atque! Ipsa nihil debitis, molestiae provident minima architecto perspiciatis magni voluptatem reprehenderit, corrupti suscipit ad fugit fuga laboriosam dignissimos ipsam!</p>
+                    <p>A game made with pygame that allows a user to simulate playing Rock Paper Scissors with a computer. To play, simply download the project folder, extract the files, install the libraries mentioned at the top of the "rps.py" file, and run the "rps.py" file, which will open up a game window. You can then press start and begin playing by choosing the rock, paper, or scissors button. After each round, press the space bar to restart or the window exit button to stop.
 
-                    <button>Demo</button>
+                    </p>
+
+                    <button><a href="https://github.com/mdola19/Rock-Paper-Scissors-Simulator">Repo</a></button>
 
                     <img id="r-arrow1" class="right-arrow" src="images/arrow.svg" alt="">
 
@@ -126,31 +128,17 @@
 
                     <img src="images/open-cv.jpg" alt="">
 
-                    <h3>Drawing App</h3>
+                    <h3>Face Mask Detector</h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore eligendi! Autem ut quaerat error repellat nemo sed obcaecati voluptates ipsa! Iste, eligendi commodi! Quis itaque tenetur obcaecati dolorem sed non, in consequatur ipsam minima minus fugiat incidunt esse aut atque! Ipsa nihil debitis, molestiae provident minima architecto perspiciatis magni voluptatem reprehenderit, corrupti suscipit ad fugit fuga laboriosam dignissimos ipsam!</p>
+                    <p>This face mask detection program detects faces using a webcam and applies a machine learning model to determine whether or not the person is wearing a mask. It can be used to ensure people entering a classroom or family gathering are wearing a mask by simply setting it up near the entrance. A text-to-speech feature is also implemented in this program to remind people who are not wearing a mask to wear a mask.</p>
 
-                    <button>Demo</button>
+                    <button><a href="https://github.com/mdola19/Face-Mask-Detector">Repo</a></button>
 
-                    <img id="r-arrow2" class="right-arrow" src="images/arrow.svg" alt="">
 
                     <img id="l-arrow1" class="left-arrow" src="images/arrow.svg" alt="">
 
                 </div>
 
-                <div class="numpy-project fadeIn formatting">
-
-                    <img src="images/numpy.jpg" alt="">
-
-                    <h3>Shape Generator</h3>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore eligendi! Autem ut quaerat error repellat nemo sed obcaecati voluptates ipsa! Iste, eligendi commodi! Quis itaque tenetur obcaecati dolorem sed non, in consequatur ipsam minima minus fugiat incidunt esse aut atque! Ipsa nihil debitis, molestiae provident minima architecto perspiciatis magni voluptatem reprehenderit, corrupti suscipit ad fugit fuga laboriosam dignissimos ipsam!</p>
-
-                    <button>Demo</button>
-
-                    <img id="l-arrow2" class="left-arrow" src="images/arrow.svg" alt="">
-
-                </div>
 
             </div>
 
@@ -166,7 +154,7 @@
 
                     <h3>Perosonal Portfolio Website</h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore eligendi! Autem ut quaerat error repellat nemo sed obcaecati voluptates ipsa! Iste, eligendi commodi! Quis itaque tenetur obcaecati dolorem sed non, in consequatur ipsam minima minus fugiat incidunt esse aut atque! Ipsa nihil debitis, molestiae provident minima architecto perspiciatis magni voluptatem reprehenderit, corrupti suscipit ad fugit fuga laboriosam dignissimos ipsam!</p>
+                    <p>This is a personal portfolio website I made to showcase my journey through the world of engineering. From design to programming and hardware, it showcases all my skills, projects and experience.</p>
 
                 </div>
 
@@ -198,9 +186,12 @@
 
                     <h3>Telescope Mount</h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore eligendi! Autem ut quaerat error repellat nemo sed obcaecati voluptates ipsa! Iste, eligendi commodi! Quis itaque tenetur obcaecati dolorem sed non, in consequatur ipsam minima minus fugiat incidunt esse aut atque! Ipsa nihil debitis, molestiae provident minima architecto perspiciatis magni voluptatem reprehenderit, corrupti suscipit ad fugit fuga laboriosam dignissimos ipsam!</p>
+                    <p>I think the telescope mount that I designed solves the problems
+                        I had very well. The small bracket fits in perfectly with the
+                        tripod and the actual mount also distributes the weight of the
+                        telescope evenly to hold it stable.</p>
 
-                    <button>3D View</button>
+                    <button onclick="location.href='DesignReport.pdf';">Report</button>
 
                 </div>
 
@@ -210,9 +201,11 @@
 
         <div class="hardware-pops">
 
+
+
             <div class="arduino-popup pop">
 
-                <h1>Arduino Uno R3</h1>
+                <h1>TO BE UPDATED!</h1>
 
                 <img id='arduino-x' class="close" src="images/x.svg" alt="">
 
@@ -353,20 +346,12 @@
         document.querySelector('.opencv-project').style.display = 'block';
     });
 
-    document.getElementById('r-arrow2').addEventListener('click', function(){
-        document.querySelector('.opencv-project').style.display = 'none';
-        document.querySelector('.numpy-project').style.display = 'block';
-    });
 
     document.getElementById('l-arrow1').addEventListener('click', function(){
         document.querySelector('.python-project').style.display = 'block';
         document.querySelector('.opencv-project').style.display = 'none';
     });
 
-    document.getElementById('l-arrow2').addEventListener('click', function(){
-        document.querySelector('.numpy-project').style.display = 'none';
-        document.querySelector('.opencv-project').style.display = 'block';
-    });
 
     document.getElementById('r-arrow3').addEventListener('click', function(){
         document.querySelector('.led-project').style.display = 'none';

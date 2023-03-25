@@ -716,10 +716,6 @@
             .opencv-project {
                 display: none;
                 animation: fadeIn 1s ease-in;
-
-                .right-arrow {
-                    top: 40%;
-                }
         
                 .left-arrow {
                     top: 40%;
@@ -1547,7 +1543,7 @@ section.interact {
                         padding: 10px;
                         border-radius: 10px;
                         animation: load 2s 0s;
-                        width: calc(65% - 28px);
+                        width: calc(85% - 28px);
                         height: 1px;
                         position: absolute;
                         left: 17.5%;
@@ -2103,7 +2099,7 @@ section.interact {
                             padding: 10px;
                             border-radius: 10px;
                             animation: load 2s 0s;
-                            width: calc(65% - 28px);
+                            width: calc(85% - 28px);
                             height: 1px;
                             position: absolute;
                             left: 17.5%;
@@ -2605,16 +2601,28 @@ footer {
 @media only screen and (min-width: 1255px) {
 
     .hero {
-        height: 800px;
+        height: 870px;
 
         .container {
             display: flex;
             position: absolute;
             left: 50%;
-            top: 50%;
+            top: 45%;
             transform: translate(-50%, -55%);
             width: 60em;
 
+        }
+
+        &:after {
+            content: ''; 
+            position: absolute;
+            width: 100%;
+            height: 1000px;
+            background: var(--primary-color);
+            left: 0;
+            top: 2em;
+            opacity: 75%;
+            z-index: -1;
         }
     }
 
